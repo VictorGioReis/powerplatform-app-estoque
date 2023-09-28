@@ -1,0 +1,1 @@
+# powerplatform-app-estoque
