@@ -557,7 +557,8 @@
                     Height: =48
                     HoverColor: =ColorFade(Color.FireBrick, 20%)
                     Icon: =Icon.ZoomIn
-                    OnSelect: =Select(Parent)
+                    OnSelect: |-
+                        =UpdateContext({varViewDetailProduto: true})
                     X: =460
                     ZIndex: =8
 
