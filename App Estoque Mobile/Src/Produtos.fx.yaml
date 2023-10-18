@@ -213,7 +213,7 @@
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.Sort
                     OnSelect: |-
-                        =UpdateContext({varCadProdutoOrdem: !varCadProdutoOrdem})
+                        =UpdateContext({varCadProdutoOrdem: !varCadProdutoOrdem});Reset('sel-PesquisaCategoria');Reset('txt-PesquisaProduto');Reset('txt-PesquisaEAN')
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
