@@ -1,6 +1,6 @@
 CadastroProduto As screen:
-    Fill: =RGBA(29, 29, 29, 1)
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    Fill: =RGBA(31, 31, 31, 1)
+    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
 
     HtmlText2_20 As htmlViewer:
         Height: =88
@@ -35,7 +35,7 @@ CadastroProduto As screen:
         ZIndex: =2
 
     "'frm-cadProduto' As form":
-        BorderColor: =RGBA(197, 203, 207, 1)
+        BorderColor: =RGBA(109, 109, 109, 1)
         DataSource: =dtbProduto
         Height: =890
         SnapToColumns: =false
@@ -45,7 +45,7 @@ CadastroProduto As screen:
         ZIndex: =3
 
         EAN_DataCard2_1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(109, 109, 109, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="EAN"
             Default: =ThisItem.EAN
@@ -63,9 +63,17 @@ CadastroProduto As screen:
 
             DataCardKey59_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -80,19 +88,23 @@ CadastroProduto As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =First(colScan).Value 
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
                 FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 Height: =52
                 HintText: ="Digite ou utilize o leitor"
-                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(62, 74, 83, 1)
+                HoverFill: =RGBA(31, 31, 31, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(255, 200, 61, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(31, 31, 31, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -106,8 +118,14 @@ CadastroProduto As screen:
 
             ErrorMessage55_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 51, 51, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -115,7 +133,7 @@ CadastroProduto As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -125,9 +143,17 @@ CadastroProduto As screen:
 
             StarVisible55_1 As label:
                 Align: =Align.Center
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey59_1.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -162,7 +188,7 @@ CadastroProduto As screen:
 
         UNM_DataCard3 As typedDataCard.allowedValuesStringEditCard:
             AllowedValues: =DataSourceInfo([@dtbProduto], DataSourceInfo.AllowedValues, "UNM")
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(109, 109, 109, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="UNM"
             Default: =ThisItem.UNM
@@ -179,9 +205,17 @@ CadastroProduto As screen:
 
             DataCardKey21 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -192,25 +226,34 @@ CadastroProduto As screen:
 
             DataCardValue13 As dropdown:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(100, 118, 132, 1)
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                ChevronBackground: =RGBA(31, 31, 31, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(218, 218, 218, 1)
+                ChevronHoverBackground: =RGBA(79, 79, 79, 1)
+                ChevronHoverFill: =RGBA(218, 218, 218, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
+                Font: =Font.'Segoe UI'
                 Height: =70
+                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(62, 74, 83, 1)
+                HoverFill: =RGBA(79, 79, 79, 1)
                 Items: =["Lata 350ml","Garrafa 600ml", "Litro","Lata 269ml","Garrafa 750ml","150g"]
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(197, 203, 207, 1)
-                SelectionFill: =RGBA(100, 118, 132, 1)
+                PaddingBottom: =5
+                PaddingLeft: =12
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                PressedColor: =RGBA(31, 31, 31, 1)
+                PressedFill: =RGBA(255, 200, 61, 1)
+                SelectionColor: =RGBA(31, 31, 31, 1)
+                SelectionFill: =RGBA(255, 200, 61, 1)
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -220,8 +263,14 @@ CadastroProduto As screen:
 
             ErrorMessage22 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 51, 51, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -229,7 +278,7 @@ CadastroProduto As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -239,9 +288,17 @@ CadastroProduto As screen:
 
             StarVisible22 As label:
                 Align: =Align.Center
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey21.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -252,7 +309,7 @@ CadastroProduto As screen:
 
         Categoria_DataCard4 As typedDataCard.allowedValuesStringEditCard:
             AllowedValues: =DataSourceInfo([@dtbProduto], DataSourceInfo.AllowedValues, "Categoria")
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(109, 109, 109, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Categoria"
             Default: =ThisItem.Categoria
@@ -269,9 +326,17 @@ CadastroProduto As screen:
 
             DataCardKey20 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -282,25 +347,34 @@ CadastroProduto As screen:
 
             DataCardValue12 As dropdown:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                ChevronBackground: =RGBA(100, 118, 132, 1)
-                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
-                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                ChevronBackground: =RGBA(31, 31, 31, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(218, 218, 218, 1)
+                ChevronHoverBackground: =RGBA(79, 79, 79, 1)
+                ChevronHoverFill: =RGBA(218, 218, 218, 1)
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
+                Font: =Font.'Segoe UI'
                 Height: =70
+                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(62, 74, 83, 1)
+                HoverFill: =RGBA(79, 79, 79, 1)
                 Items: =["Cervejas","Refrigerantes","Destilados","Vinhos","Doces","Salgados"]
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =RGBA(197, 203, 207, 1)
-                SelectionFill: =RGBA(100, 118, 132, 1)
+                PaddingBottom: =5
+                PaddingLeft: =12
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                PressedColor: =RGBA(31, 31, 31, 1)
+                PressedFill: =RGBA(255, 200, 61, 1)
+                SelectionColor: =RGBA(31, 31, 31, 1)
+                SelectionFill: =RGBA(255, 200, 61, 1)
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -310,8 +384,14 @@ CadastroProduto As screen:
 
             ErrorMessage20 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 51, 51, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -319,7 +399,7 @@ CadastroProduto As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -329,9 +409,17 @@ CadastroProduto As screen:
 
             StarVisible20 As label:
                 Align: =Align.Center
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey20.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -341,7 +429,7 @@ CadastroProduto As screen:
                 ZIndex: =4
 
         Imagem_DataCard1 As typedDataCard.addLargePictureCard:
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(109, 109, 109, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Imagem"
             Default: =ThisItem.Imagem
@@ -358,9 +446,17 @@ CadastroProduto As screen:
 
             DataCardKey1 As label:
                 AutoHeight: =true
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -371,11 +467,18 @@ CadastroProduto As screen:
 
             Image2 As image:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
                 DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
                 Height: =AddPicture2.Height
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
                 Image: =If(IsBlank(AddPicture2.Media), Parent.Default, AddPicture2.Media)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
                 Tooltip: =Parent.DisplayName
                 Width: =AddPicture2.Width
                 X: =AddPicture2.X
@@ -383,9 +486,24 @@ CadastroProduto As screen:
                 ZIndex: =2
 
             AddPicture2 As addMedia:
-                BorderColor: =RGBA(197, 203, 207, 1)
-                Fill: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(31, 31, 31, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 200, 61, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 Height: =227
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(31, 31, 31, 1)
+                HoverFill: =ColorFade(RGBA(255, 200, 61, 1), 10%)
+                PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 50%)
+                PressedColor: =RGBA(31, 31, 31, 1)
+                PressedFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                Size: =24
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey1.Y + DataCardKey1.Height + 5
@@ -393,8 +511,14 @@ CadastroProduto As screen:
 
             ErrorMessage1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 51, 51, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -402,7 +526,7 @@ CadastroProduto As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -412,9 +536,17 @@ CadastroProduto As screen:
 
             StarVisible1 As label:
                 Align: =Align.Center
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey1.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -424,7 +556,7 @@ CadastroProduto As screen:
                 ZIndex: =5
 
         Cod_Produto_DataCard2_1 As typedDataCard.numberEditCard:
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(109, 109, 109, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Cod_Produto"
             Default: =ThisItem.Cod_Produto
@@ -441,9 +573,17 @@ CadastroProduto As screen:
 
             DataCardKey44_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: ="Código Produto"
                 Width: =Parent.Width - 60
@@ -458,19 +598,23 @@ CadastroProduto As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =If('frm-cadProduto'.Mode.New, Last(dtbProduto).Cod_Produto + 1, ThisItem.Cod_Produto)
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =DisplayMode.View
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
                 FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Format: =TextFormat.Number
                 Height: =70
-                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(62, 74, 83, 1)
+                HoverFill: =RGBA(31, 31, 31, 1)
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(255, 200, 61, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(31, 31, 31, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -484,8 +628,14 @@ CadastroProduto As screen:
 
             ErrorMessage40_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 51, 51, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -493,7 +643,7 @@ CadastroProduto As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -503,9 +653,17 @@ CadastroProduto As screen:
 
             StarVisible40_1 As label:
                 Align: =Align.Center
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey44_1.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -515,7 +673,7 @@ CadastroProduto As screen:
                 ZIndex: =4
 
         Descricao_DataCard3_1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(109, 109, 109, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Descricao"
             Default: =ThisItem.Descricao
@@ -533,9 +691,17 @@ CadastroProduto As screen:
 
             DataCardKey45_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: ="Descrição"
                 Width: =Parent.Width - 60
@@ -550,18 +716,22 @@ CadastroProduto As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
                 FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 Height: =70
-                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(62, 74, 83, 1)
+                HoverFill: =RGBA(31, 31, 31, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(255, 200, 61, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(31, 31, 31, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -575,8 +745,14 @@ CadastroProduto As screen:
 
             ErrorMessage41_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 51, 51, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -584,7 +760,7 @@ CadastroProduto As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -594,9 +770,17 @@ CadastroProduto As screen:
 
             StarVisible41_1 As label:
                 Align: =Align.Center
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey45_1.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -606,7 +790,7 @@ CadastroProduto As screen:
                 ZIndex: =4
 
         Estoque_DataCard2_1 As typedDataCard.numberEditCard:
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(109, 109, 109, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Estoque"
             Default: =ThisItem.Estoque
@@ -623,9 +807,17 @@ CadastroProduto As screen:
 
             DataCardKey52_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -640,18 +832,22 @@ CadastroProduto As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
                 FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 Format: =TextFormat.Number
                 Height: =70
-                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(62, 74, 83, 1)
+                HoverFill: =RGBA(31, 31, 31, 1)
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(255, 200, 61, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(31, 31, 31, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -665,8 +861,14 @@ CadastroProduto As screen:
 
             ErrorMessage42_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 51, 51, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -674,7 +876,7 @@ CadastroProduto As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -684,9 +886,17 @@ CadastroProduto As screen:
 
             StarVisible42_1 As label:
                 Align: =Align.Center
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey52_1.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -696,7 +906,7 @@ CadastroProduto As screen:
                 ZIndex: =4
 
         Custo_DataCard2_1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(109, 109, 109, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Custo"
             Default: =ThisItem.Custo
@@ -714,9 +924,17 @@ CadastroProduto As screen:
 
             DataCardKey54_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -731,18 +949,22 @@ CadastroProduto As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
                 FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 Height: =70
-                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(62, 74, 83, 1)
+                HoverFill: =RGBA(31, 31, 31, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(255, 200, 61, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(31, 31, 31, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -756,8 +978,14 @@ CadastroProduto As screen:
 
             ErrorMessage44_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 51, 51, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -765,7 +993,7 @@ CadastroProduto As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -775,9 +1003,17 @@ CadastroProduto As screen:
 
             StarVisible44_1 As label:
                 Align: =Align.Center
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey54_1.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -787,7 +1023,7 @@ CadastroProduto As screen:
                 ZIndex: =4
 
         Valor_DataCard5_1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(109, 109, 109, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Valor"
             Default: =ThisItem.Valor
@@ -805,9 +1041,17 @@ CadastroProduto As screen:
 
             DataCardKey55_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: =Parent.DisplayName & " para Venda"
                 Width: =Parent.Width - 60
@@ -822,18 +1066,22 @@ CadastroProduto As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Parent.Default
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =Parent.DisplayMode
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
                 FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 Height: =70
-                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(62, 74, 83, 1)
+                HoverFill: =RGBA(31, 31, 31, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(255, 200, 61, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(31, 31, 31, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -847,8 +1095,14 @@ CadastroProduto As screen:
 
             ErrorMessage45_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 51, 51, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -856,7 +1110,7 @@ CadastroProduto As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -866,9 +1120,17 @@ CadastroProduto As screen:
 
             StarVisible45_1 As label:
                 Align: =Align.Center
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey55_1.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -878,7 +1140,7 @@ CadastroProduto As screen:
                 ZIndex: =4
 
         CustoTotal_DataCard2_1 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(109, 109, 109, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="CustoTotal"
             Default: =ThisItem.CustoTotal
@@ -896,9 +1158,17 @@ CadastroProduto As screen:
 
             DataCardKey56_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =48
+                PaddingLeft: =0
                 Size: =21
                 Text: ="Custo Total"
                 Width: =Parent.Width - 60
@@ -913,18 +1183,22 @@ CadastroProduto As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =Sum(DataCardValue50_1 * DataCardValue47_1)
                 DelayOutput: =true
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =DisplayMode.View
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
                 FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 Height: =70
-                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(62, 74, 83, 1)
+                HoverFill: =RGBA(31, 31, 31, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
+                PressedBorderColor: =RGBA(255, 200, 61, 1)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(31, 31, 31, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -938,8 +1212,14 @@ CadastroProduto As screen:
 
             ErrorMessage52_1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(255, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 51, 51, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
@@ -947,7 +1227,7 @@ CadastroProduto As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =24
+                Size: =21
                 Text: =Parent.Error
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
@@ -957,9 +1237,17 @@ CadastroProduto As screen:
 
             StarVisible52_1 As label:
                 Align: =Align.Center
-                Color: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
                 Height: =DataCardKey56_1.Height
+                PaddingLeft: =0
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
@@ -969,30 +1257,42 @@ CadastroProduto As screen:
                 ZIndex: =4
 
     Icon2_2 As icon.Camera:
-        BorderColor: =RGBA(197, 203, 207, 1)
-        Color: =RGBA(197, 203, 207, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        BorderColor: =RGBA(109, 109, 109, 1)
+        Color: =RGBA(255, 200, 61, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
         Height: =60
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 191, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.ArrowLeft
         OnSelect: =Navigate(Produtos,ScreenTransition.UnCover)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =60
         X: =559
         Y: =88
         ZIndex: =5
 
     Icon2_3 As icon.Camera:
-        BorderColor: =RGBA(197, 203, 207, 1)
+        BorderColor: =RGBA(109, 109, 109, 1)
         Color: =RGBA(184, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
         Height: =60
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 191, 0, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
         Icon: =Icon.Cancel
         OnSelect: =ResetForm('frm-cadProduto');ViewForm('frm-cadProduto');Navigate(Produtos,ScreenTransition.UnCover)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =60
         X: =427
         Y: =1058
@@ -1009,18 +1309,25 @@ CadastroProduto As screen:
             Align: =Align.Right
             BorderColor: =RGBA(255, 191, 0, 1)
             Color: =RGBA(255, 191, 0, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(218, 228, 235, 0.25)
+            FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+            Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =70
             HoverBorderColor: =RGBA(255, 255, 0, 1)
             HoverColor: =RGBA(255, 255, 0, 1)
             HoverFill: =
             OnSelect: =SubmitForm('frm-cadProduto');Notify("       Novo Produto Registrado com Sucesso!",NotificationType.Success);ResetForm('frm-cadProduto');ViewForm('frm-cadProduto');Navigate(Produtos,ScreenTransition.UnCover)
+            PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 50%)
             PressedColor: =RGBA(224, 228, 230, 1)
             PressedFill: =RGBA(255, 255, 0, 0.67)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Size: =24
             Text: ="Salvar"
             Width: =163
@@ -1029,12 +1336,19 @@ CadastroProduto As screen:
             ZIndex: =6
 
         "'icon-cadprod_2' As image":
-            BorderColor: =RGBA(197, 203, 207, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
             Height: =45
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
             Image: ='disquete (1)'
             OnSelect: =SubmitForm('frm-cadProduto');Notify("       Novo Produto Registrado com Sucesso!",NotificationType.Success);ResetForm('frm-cadProduto');ViewForm('frm-cadProduto');Navigate(Produtos,ScreenTransition.UnCover)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
             Width: =45
             X: =120
             Y: =1070

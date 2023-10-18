@@ -1,6 +1,6 @@
 "'Vendas Realizadas' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    Fill: =RGBA(29, 29, 29, 1)
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    Fill: =RGBA(31, 31, 31, 1)
+    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
 
     Canvas1_4 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -40,53 +40,65 @@
                 ZIndex: =1
 
             separator_7 As rectangle:
-                BorderColor: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(255, 191, 0, 1)
+                FocusedBorderThickness: =4
                 Height: =5
+                HoverFill: =RGBA(255, 200, 61, 1)
+                PressedFill: =RGBA(255, 200, 61, 1)
                 Width: =565
                 X: =37
                 Y: =1030
                 ZIndex: =2
 
             icon_retornar_3 As icon.Camera:
-                BorderColor: =RGBA(197, 203, 207, 1)
-                Color: =RGBA(197, 203, 207, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
+                BorderColor: =RGBA(109, 109, 109, 1)
+                Color: =RGBA(255, 200, 61, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
                 Height: =60
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 191, 0, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.ArrowLeft
                 OnSelect: =Navigate(Home,ScreenTransition.UnCoverRight)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =60
                 X: =535
                 ZIndex: =3
 
             dt_Vendas As dataTable.datatable:
-                BorderColor: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.Solid
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =DisplayMode.Edit
                 Fill: =RGBA(0, 0, 0, 0)
-                Font: =Font.'Open Sans'
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Normal
                 HeadingColor: =RGBA(255, 191, 0, 1)
                 HeadingFill: =RGBA(0, 0, 0, 0)
-                HeadingFont: =Font.'Open Sans'
+                HeadingFont: =Font.'Segoe UI'
                 HeadingFontWeight: =FontWeight.Bold
                 HeadingSize: =21
                 Height: =750
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(62, 74, 83, .2)
-                InputFill: =RGBA(0, 0, 0, 1)
-                InvertedColor: =RGBA(255, 255, 255, 1)
+                HoverColor: =RGBA(31, 31, 31, 1)
+                HoverFill: =RGBA(255, 200, 61, 1)
+                InputFill: =RGBA(31, 31, 31, 1)
+                InvertedColor: =RGBA(31, 31, 31, 1)
                 Items: =Filter(dtbVenda, Data = dp_inicio.SelectedDate)
-                LinkColor: =ColorFade(RGBA(0, 134, 208, 1), 30%)
-                PrimaryColor1: =RGBA(100, 118, 132, 1)
-                PrimaryColor2: =RGBA(197, 203, 207, 1)
-                PrimaryColor3: =RGBA(62, 74, 83, 1)
+                LinkColor: =RGBA(0, 134, 208, 1)
+                PrimaryColor1: =RGBA(255, 200, 61, 1)
+                PrimaryColor2: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                PrimaryColor3: =ColorFade(RGBA(255, 200, 61, 1), 50%)
                 SelectedColor: =RGBA(255, 255, 255, 1)
                 SelectedFill: =RGBA(255, 191, 0, 0.51)
                 Size: =21
@@ -170,37 +182,43 @@
                     ZIndex: =19
 
             dp_inicio As datepicker:
-                BorderColor: =RGBA(197, 203, 207, 1)
-                CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                BorderColor: =RGBA(109, 109, 109, 1)
+                CalendarHeaderFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 Color: =RGBA(255, 255, 255, 1)
                 DefaultDate: =DateAdd( Today(), -10, TimeUnit.Days)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
+                Font: =Font.'Segoe UI'
                 Height: =63
-                HoverDateFill: =RGBA(62, 74, 83, 1)
-                IconBackground: =RGBA(100, 118, 132, 1)
-                SelectedDateFill: =RGBA(100, 118, 132, 1)
-                Size: =24
+                HoverDateFill: =RGBA(144, 144, 144, 1)
+                IconBackground: =RGBA(255, 200, 61, 1)
+                IconFill: =RGBA(31, 31, 31, 1)
+                PaddingTop: =5
+                SelectedDateFill: =RGBA(255, 200, 61, 1)
+                Size: =21
                 Width: =235
                 X: =16
                 Y: =129
                 ZIndex: =11
 
             dp_fim As datepicker:
-                BorderColor: =RGBA(197, 203, 207, 1)
-                CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                BorderColor: =RGBA(109, 109, 109, 1)
+                CalendarHeaderFill: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(31, 31, 31, 1)
+                Font: =Font.'Segoe UI'
                 Height: =63
-                HoverDateFill: =RGBA(62, 74, 83, 1)
-                IconBackground: =RGBA(100, 118, 132, 1)
-                SelectedDateFill: =RGBA(100, 118, 132, 1)
-                Size: =24
+                HoverDateFill: =RGBA(144, 144, 144, 1)
+                IconBackground: =RGBA(255, 200, 61, 1)
+                IconFill: =RGBA(31, 31, 31, 1)
+                PaddingTop: =5
+                SelectedDateFill: =RGBA(255, 200, 61, 1)
+                Size: =21
                 Width: =235
                 X: =360
                 Y: =129
@@ -238,10 +256,16 @@
                 ZIndex: =1
 
             Rectangle4_20 As rectangle:
-                BorderColor: =RGBA(197, 203, 207, 1)
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(166, 166, 166, 1)
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(224, 228, 230, 1)
+                FocusedBorderThickness: =4
                 Height: =10
+                HoverFill: =RGBA(255, 200, 61, 1)
+                PressedFill: =RGBA(255, 200, 61, 1)
                 Width: =100
                 X: =270
                 Y: =16
@@ -274,7 +298,7 @@
             ZIndex: =1
 
         RectQuickActionBar1_4 As rectangle:
-            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =88
             Width: =Parent.Width
