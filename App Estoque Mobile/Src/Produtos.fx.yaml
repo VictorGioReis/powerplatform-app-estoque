@@ -189,8 +189,7 @@
                         '>
                         </div>"
                     Width: =577
-                    X: =30
-                    Y: =70
+                    Y: =20
                     ZIndex: =1
 
                 Label2_6 As label:
@@ -224,8 +223,8 @@
                     Image: ='caixa-de-entrega'
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
-                    X: =68
-                    Y: =93
+                    X: =38
+                    Y: =28
                     ZIndex: =3
 
                 "'btn-newProduto' As button":
@@ -550,7 +549,7 @@
                 ShowNavigation: =true
                 TemplateSize: =225
                 Transition: =Transition.Push
-                Width: =584
+                Width: =619
                 X: =21
                 Y: =84
                 ZIndex: =12
@@ -707,6 +706,21 @@
                     Width: =574
                     Y: =215
                     ZIndex: =9
+
+                Rectangle3 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 200, 61, 0.38)
+                    FocusedBorderThickness: =4
+                    Height: =225
+                    HoverFill: =RGBA(255, 200, 61, 0.1)
+                    OnSelect: =Select(Parent)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =609
+                    ZIndex: =10
 
     CabecalhoProduto As group:
         Height: =5

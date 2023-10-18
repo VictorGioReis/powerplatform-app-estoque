@@ -741,6 +741,7 @@
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
             DisabledFill: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.Disabled
             Fill: =RGBA(116, 116, 116, 0.83)
             FocusedBorderThickness: =4
             Height: =1136
