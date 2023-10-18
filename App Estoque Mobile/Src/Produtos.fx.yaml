@@ -88,40 +88,6 @@
                 X: =535
                 ZIndex: =20
 
-            "'sel-PesquisaCategoria' As dropdown":
-                BorderColor: =RGBA(109, 109, 109, 1)
-                ChevronBackground: =RGBA(31, 31, 31, 1)
-                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-                ChevronFill: =RGBA(218, 218, 218, 1)
-                ChevronHoverBackground: =RGBA(79, 79, 79, 1)
-                ChevronHoverFill: =RGBA(218, 218, 218, 1)
-                Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(31, 31, 31, 1)
-                Font: =Font.'Segoe UI'
-                Height: =56
-                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(79, 79, 79, 1)
-                Items: =Distinct(dtbProduto, Categoria)
-                PaddingBottom: =5
-                PaddingLeft: =12
-                PaddingRight: =5
-                PaddingTop: =5
-                PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                PressedColor: =RGBA(31, 31, 31, 1)
-                PressedFill: =RGBA(255, 200, 61, 1)
-                SelectionColor: =RGBA(31, 31, 31, 1)
-                SelectionFill: =RGBA(255, 200, 61, 1)
-                Size: =21
-                Width: =422
-                X: =150
-                Y: =794
-                ZIndex: =21
-
             "'card-pesquisa-prod' As group":
                 Height: =5
                 Width: =5
@@ -212,7 +178,7 @@
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.Sort
                     OnSelect: |-
-                        =UpdateContext({varCadProdutoOrdem: !varCadProdutoOrdem});Reset('sel-PesquisaCategoria');Reset('txt-PesquisaProduto');Reset('txt-PesquisaEAN')
+                        =UpdateContext({varCadProdutoOrdem: !varCadProdutoOrdem});Reset('cbx-PesquisaCategoria');Reset('txt-PesquisaProduto');Reset('txt-PesquisaEAN')
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
@@ -220,6 +186,39 @@
                     X: =510
                     Y: =571
                     ZIndex: =19
+
+            "'cbx-PesquisaCategoria' As combobox":
+                BorderColor: =RGBA(109, 109, 109, 1)
+                ChevronBackground: =RGBA(31, 31, 31, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(218, 218, 218, 1)
+                ChevronHoverBackground: =RGBA(79, 79, 79, 1)
+                ChevronHoverFill: =RGBA(218, 218, 218, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Fill: =RGBA(31, 31, 31, 1)
+                Font: =Font.'Segoe UI'
+                Height: =56
+                HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(79, 79, 79, 1)
+                Items: =Distinct(dtbProduto, Categoria)
+                PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                PressedColor: =RGBA(31, 31, 31, 1)
+                PressedFill: =RGBA(255, 200, 61, 1)
+                SearchFields: =["Value"]
+                SearchItems: =Search(Distinct(dtbProduto, Categoria),'cbx-PesquisaCategoria'.SearchText,"Value")
+                SelectionColor: =RGBA(31, 31, 31, 1)
+                SelectionFill: =RGBA(255, 200, 61, 1)
+                Size: =21
+                Width: =422
+                X: =155
+                Y: =795
+                ZIndex: =22
 
             "'card-new-cad-prod' As group":
                 Height: =5
@@ -531,7 +530,7 @@
                             Descricao,
                             'txt-PesquisaProduto'.Text
                         ),
-                        IsBlank('sel-PesquisaCategoria'.Selected.Value) || Categoria = 'sel-PesquisaCategoria'.Selected.Value
+                        IsBlank('cbx-PesquisaCategoria'.Selected.Value) || Categoria = 'cbx-PesquisaCategoria'.Selected.Value
                         ),
                         "Cod_Produto",
                         If(varCadProdutoOrdem, SortOrder.Ascending, SortOrder.Descending))
