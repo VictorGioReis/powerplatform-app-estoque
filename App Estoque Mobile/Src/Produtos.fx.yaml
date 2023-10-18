@@ -553,6 +553,33 @@
                 Y: =84
                 ZIndex: =12
 
+                HtmlText1 As htmlViewer:
+                    Height: =225
+                    HtmlText: |-
+                        =If(ThisItem.IsSelected,"<div style='
+                        width: 100%;
+                        height: 215px;
+                        
+                        background: #232526;  
+                        
+                        box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
+                        border-radius: 40px;
+                        '>
+                        </div>",
+                        "<div style='
+                        width: 100%;
+                        height: 215px;
+                        
+                        background: none;  
+                        
+                        box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
+                        border-radius: 40px;
+                        '>
+                        </div>")
+                    OnSelect: =Select(Parent)
+                    Width: =609
+                    ZIndex: =1
+
                 Rectangle3 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
@@ -566,7 +593,7 @@
                     OnSelect: =Select(Parent)
                     PressedFill: =RGBA(255, 200, 61, 0.5)
                     Width: =609
-                    ZIndex: =1
+                    ZIndex: =2
 
                 Label14 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -586,7 +613,7 @@
                     Width: =410
                     X: =120
                     Y: =9
-                    ZIndex: =2
+                    ZIndex: =3
 
                 Label15 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -605,7 +632,7 @@
                     Width: =439
                     X: =123
                     Y: =48
-                    ZIndex: =3
+                    ZIndex: =4
 
                 Image16 As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -626,7 +653,7 @@
                     RadiusTopRight: =150
                     X: =9
                     Y: =9
-                    ZIndex: =4
+                    ZIndex: =5
 
                 Rectangle6 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -642,7 +669,7 @@
                     Width: =550
                     X: =9
                     Y: =190
-                    ZIndex: =5
+                    ZIndex: =6
 
                 Label14_1 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -662,7 +689,7 @@
                     Width: =342
                     X: =22
                     Y: =135
-                    ZIndex: =6
+                    ZIndex: =7
 
                 Label14_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -682,7 +709,7 @@
                     Width: =190
                     X: =381
                     Y: =135
-                    ZIndex: =7
+                    ZIndex: =8
 
                 Icon3 As icon.ZoomIn:
                     BorderColor: =RGBA(109, 109, 109, 1)
@@ -703,7 +730,7 @@
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Tooltip: ="Detalhes do Produto"
                     X: =507
-                    ZIndex: =8
+                    ZIndex: =9
 
                 Rectangle2 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -719,7 +746,7 @@
                     PressedFill: =RGBA(255, 200, 61, 1)
                     Width: =574
                     Y: =215
-                    ZIndex: =9
+                    ZIndex: =10
 
     CabecalhoProduto As group:
         Height: =5
