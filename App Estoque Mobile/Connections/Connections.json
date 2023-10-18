@@ -1,0 +1,39 @@
+{
+  "d4242a16-0a34-475f-a165-dd77de37bd2c": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1656/1.0.1656.3432/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://7jn7lv.sharepoint.com/sites/Distribuidora-VRTechSolutions": {
+        "dataSources": {
+          "dtbProduto": {
+            "tableName": "b1abb5a4-cd97-4ad9-852f-c0bc946f934e"
+          },
+          "dtbProdutoVenda": {
+            "tableName": "9c72f208-d546-4a19-bdc9-35c1a9fdfe59"
+          },
+          "dtbVenda": {
+            "tableName": "47974143-32d9-48f7-b1ef-0c29ffc672b0"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "dtbProduto",
+      "dtbVenda",
+      "dtbProdutoVenda"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d4242a16-0a34-475f-a165-dd77de37bd2c"
+  }
+}

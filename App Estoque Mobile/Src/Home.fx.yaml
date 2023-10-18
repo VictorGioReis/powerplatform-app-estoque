@@ -1,0 +1,798 @@
+"Home As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(29, 29, 29, 1)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    HtmlText2_2 As htmlViewer:
+        Height: =88
+        HtmlText: |-
+            ="<div style='
+            width: 625px;
+            height: 70px;
+            background: #FF4E50;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+            
+            
+            box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
+            border-radius: 0px;
+            '>
+            </div>"
+        Width: =640
+        ZIndex: =1
+
+    RectQuickActionBar1 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =2
+
+    LblAppName1 As label:
+        Align: =Align.Center
+        Color: =RGBA(62, 74, 83, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Patrick Hand'
+        FontWeight: =FontWeight.Bold
+        Height: =65
+        Size: =35
+        Text: ="Home"
+        Width: =173
+        Y: =5
+        ZIndex: =3
+
+    "'img-User' As image":
+        BorderColor: =RGBA(255, 191, 0, 1)
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =65
+        Image: =User().Image
+        RadiusBottomLeft: =150
+        RadiusBottomRight: =150
+        RadiusTopLeft: =150
+        RadiusTopRight: =150
+        Width: =65
+        X: =553
+        Y: =5
+        ZIndex: =14
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+        ZIndex: =15
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1380
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            homeDataCard As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =10
+
+                HtmlText2_1 As htmlViewer:
+                    Height: =390
+                    HtmlText: |-
+                        ="<div style='
+                        width: 550px;
+                        height: 350px;
+                        background: #232526;  /* fallback for old browsers */
+                        background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+                        background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                        
+                        box-shadow: rgba(100, 100, 100, 0.45) 4px 4px 4px 4px;
+                        border-radius: 15px;
+                        '>
+                        </div>"
+                    Width: =577
+                    X: =26
+                    Y: =14
+                    ZIndex: =2
+
+                Image1_1 As image:
+                    BorderColor: =RGBA(255, 191, 0, 1)
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =175
+                    Image: ='Imagem do WhatsApp de 2023-05-29 à(s) 19.32.07'
+                    ImagePosition: =ImagePosition.Stretch
+                    RadiusBottomLeft: =350
+                    RadiusBottomRight: =350
+                    RadiusTopLeft: =350
+                    RadiusTopRight: =350
+                    Width: =180
+                    X: =44
+                    Y: =30
+                    ZIndex: =3
+
+                Label2_3 As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(224, 228, 230, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =77
+                    Size: =17
+                    Text: =User().Email
+                    Width: =449
+                    X: =124
+                    Y: =240
+                    ZIndex: =4
+
+                Label2_4 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(210, 210, 210, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =77
+                    Size: =17
+                    Text: ="Seja Bem Vindo Novamente"
+                    Width: =404
+                    X: =199
+                    Y: =30
+                    ZIndex: =5
+
+                Label2_5 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(224, 228, 230, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =77
+                    Size: =25
+                    Text: =User().FullName
+                    Width: =426
+                    X: =188
+                    Y: =128
+                    ZIndex: =6
+
+                Image2_2 As image:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =39
+                    Image: ='e-mail_1'
+                    Width: =33
+                    X: =79
+                    Y: =258
+                    ZIndex: =7
+
+                Image2_3 As image:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =58
+                    Image: ='do-utilizador (1)'
+                    Width: =60
+                    X: =248
+                    Y: =137
+                    ZIndex: =8
+
+                Rectangle2_1 As rectangle:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Fill: =RGBA(255, 191, 0, 1)
+                    Height: =2
+                    Width: =470
+                    X: =79
+                    Y: =225
+                    ZIndex: =9
+
+            separator As rectangle:
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Fill: =RGBA(255, 191, 0, 1)
+                Height: =5
+                Width: =565
+                X: =31
+                Y: =418
+                ZIndex: =22
+
+            glrMenu1 As gallery.galleryVertical:
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Height: =770
+                Items: |-
+                    =Table({Id:1, Tela: Produtos, Label: "Produtos", Icon: 'caixa-aberta-cheia (2)'},{Id:2, Tela: Blank(), Label: "Estoque", Icon: 'armazem-alt'},{Id:3, Tela:Blank(), Label: "Movimentações", Icon: caixas})
+                Layout: =Layout.Vertical
+                ShowScrollbar: =false
+                TemplateSize: =237
+                Transition: =Transition.Push
+                Width: =343
+                X: =40
+                Y: =555
+                ZIndex: =23
+
+                btnNew_4 As group:
+                    Height: =5
+                    Width: =5
+                    X: =20
+                    Y: =17
+                    ZIndex: =5
+
+                    HtmlText5_4 As htmlViewer:
+                        Height: =235
+                        HtmlText: |-
+                            ="<div style='
+                            width: 225px;
+                            height: 220px;
+                            
+                            background: #232526;  /* fallback for old browsers */
+                            background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+                            background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                            
+                            
+                            box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
+                            border-radius: 15px;
+                            '>
+                            </div>"
+                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
+                        Width: =237
+                        X: =39
+                        ZIndex: =1
+
+                    Label7_4 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(197, 203, 207, 1)
+                        Color: =RGBA(224, 228, 230, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =70
+                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
+                        Size: =21
+                        Text: =ThisItem.Label
+                        Width: =237
+                        X: =39
+                        Y: =152
+                        ZIndex: =2
+
+                    Circle2_4 As circle:
+                        BorderColor: =RGBA(255, 255, 0, 1)
+                        BorderStyle: =BorderStyle.Dotted
+                        BorderThickness: =1
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(255, 255, 255, 0.06)
+                        Height: =160
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =160
+                        X: =77
+                        Y: =11
+                        ZIndex: =3
+
+                    Image3_4 As image:
+                        BorderColor: =RGBA(197, 203, 207, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Image: =ThisItem.Icon
+                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
+                        X: =107
+                        Y: =33
+                        ZIndex: =4
+
+            ResumoSaldos As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =23
+
+                HtmlText4 As htmlViewer:
+                    Height: =384
+                    HtmlText: |-
+                        ="<div style='
+                        width: 550px;
+                        height: 300px;
+                        background: white;
+                        box-shadow: rgba(100, 100, 100, 0.45) 4px 4px 4px 4px;
+                        border-radius: 15px;
+                        '>
+                        </div>"
+                    Visible: =false
+                    Width: =588
+                    X: =31
+                    Y: =418
+                    ZIndex: =11
+
+                Label6 As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(51, 196, 75, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =57
+                    Size: =25
+                    Text: ="Resumo das Contas"
+                    Visible: =false
+                    Width: =532
+                    X: =59
+                    Y: =433
+                    ZIndex: =12
+
+                Label8 As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(149, 149, 149, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =37
+                    Size: =17
+                    Text: ="Saldo disponível"
+                    Visible: =false
+                    Width: =214
+                    X: =75
+                    Y: =516
+                    ZIndex: =13
+
+                lblSaldoPositivo As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(51, 196, 75, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =57
+                    Size: =25
+                    Text: |-
+                        ="R$:  "&"547,54"
+                    Visible: =false
+                    Width: =449
+                    X: =75
+                    Y: =553
+                    ZIndex: =14
+
+                Label8_1 As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(149, 149, 149, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =37
+                    Size: =17
+                    Text: ="Saldo saídas"
+                    Visible: =false
+                    Width: =214
+                    X: =75
+                    Y: =610
+                    ZIndex: =15
+
+                lblSaldoNegativo As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(255, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =57
+                    Size: =25
+                    Text: |-
+                        ="R$:  "&"798,37"
+                    Visible: =false
+                    Width: =449
+                    X: =75
+                    Y: =647
+                    ZIndex: =16
+
+                Rectangle4_1 As rectangle:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Fill: =RGBA(51, 196, 75, 1)
+                    Height: =2
+                    Visible: =false
+                    Width: =520
+                    X: =48
+                    Y: =488
+                    ZIndex: =17
+
+                Label6_3 As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(51, 196, 75, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =57
+                    Size: =25
+                    Text: ="....."
+                    Visible: =false
+                    Width: =449
+                    X: =75
+                    Y: =553
+                    ZIndex: =18
+
+                Label6_4 As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(255, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =57
+                    Size: =25
+                    Text: ="....."
+                    Visible: =false
+                    Width: =449
+                    X: =75
+                    Y: =647
+                    ZIndex: =19
+
+                bloqSaldo As image:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =40
+                    Image: =esconder
+                    OnSelect: |-
+                        =UpdateContext({varBloqueiaSaldo: true}); UpdateContext({varVerSaldo: false})
+                    Visible: =false
+                    Width: =40
+                    X: =457
+                    Y: =501
+                    ZIndex: =20
+
+                verSaldo As image:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =40
+                    Image: ='variante-de-olho-com-pupila-dilatada'
+                    OnSelect: |-
+                        = UpdateContext({varVerSaldo: true});UpdateContext({varBloqueiaSaldo: false})
+                    Visible: =false
+                    Width: =40
+                    X: =524
+                    Y: =500
+                    ZIndex: =21
+
+            glrMenu2 As gallery.galleryVertical:
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Height: =770
+                Items: |-
+                    =Table({Id: 4, Tela: Vendas, Label: "Vendas", Icon: 'usuarios-alt'},{Id:5, Tela: Blank(), Label: "Entradas", Icon: 'dolar-funil'},{Id:6, Tela: Blank(), Label: "Caixa", Icon: 'banco (3)'})
+                Layout: =Layout.Vertical
+                ShowScrollbar: =false
+                TemplateSize: =240
+                Transition: =Transition.Push
+                Width: =343
+                X: =297
+                Y: =548
+                ZIndex: =24
+
+                btnNew_5 As group:
+                    Height: =5
+                    Width: =5
+                    X: =20
+                    Y: =17
+                    ZIndex: =5
+
+                    HtmlText5_5 As htmlViewer:
+                        Height: =235
+                        HtmlText: |-
+                            ="<div style='
+                            width: 225px;
+                            height: 220px;
+                            
+                            background: #232526;  /* fallback for old browsers */
+                            background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+                            background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                            
+                            
+                            box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
+                            border-radius: 15px;
+                            '>
+                            </div>"
+                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
+                        Width: =237
+                        X: =39
+                        Y: =4
+                        ZIndex: =1
+
+                    Label7_5 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(197, 203, 207, 1)
+                        Color: =RGBA(224, 228, 230, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =70
+                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
+                        Size: =21
+                        Text: =ThisItem.Label
+                        Width: =237
+                        X: =40
+                        Y: =157
+                        ZIndex: =2
+
+                    Circle2_5 As circle:
+                        BorderColor: =RGBA(255, 255, 0, 1)
+                        BorderStyle: =BorderStyle.Dotted
+                        BorderThickness: =1
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(255, 255, 255, 0.1)
+                        Height: =160
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Width: =160
+                        X: =78
+                        Y: =16
+                        ZIndex: =3
+
+                    Image3_5 As image:
+                        BorderColor: =RGBA(197, 203, 207, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Image: =ThisItem.Icon
+                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
+                        X: =108
+                        Y: =38
+                        ZIndex: =4
+
+            "'title-menu' As label":
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Color: =RGBA(224, 228, 230, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Patrick Hand'
+                FontWeight: =FontWeight.Semibold
+                Height: =64
+                Size: =35
+                Text: ="Menu"
+                Width: =249
+                X: =94
+                Y: =480
+                ZIndex: =25
+
+            "'icon-menu' As image":
+                BorderColor: =RGBA(197, 203, 207, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =58
+                Image: ='lista-de-reproducao'
+                Width: =49
+                X: =30
+                Y: =486
+                ZIndex: =26
+
+        DataCard2 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1074
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =2
+
+            HtmlText2_3 As htmlViewer:
+                Height: =1074
+                HtmlText: |-
+                    ="<div style='
+                    width: 625px;
+                    height: 1060px;
+                    background: #FF4E50;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    
+                    box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
+                    border-radius: 40px;
+                    '>
+                    </div>"
+                Width: =640
+                ZIndex: =1
+
+            Rectangle4 As rectangle:
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Fill: =RGBA(211, 211, 211, 1)
+                Height: =10
+                Width: =100
+                X: =263
+                Y: =15
+                ZIndex: =5
+
+            Label6_2 As label:
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Color: =RGBA(29, 29, 29, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =41
+                Size: =28
+                Text: ="Meus Cards de Resumo"
+                Width: =532
+                X: =54
+                Y: =36
+                ZIndex: =6
+
+            Cartoes As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =11
+
+                HtmlText4_1 As htmlViewer:
+                    Height: =242
+                    HtmlText: |-
+                        ="<div style='
+                        width: 550px;
+                        height: 200px;
+                        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+                        box-shadow: rgba(100, 100, 100, 0.45) 4px 4px 4px 4px;
+                        border-radius: 15px;
+                        '>
+                        </div>"
+                    Width: =588
+                    X: =39
+                    Y: =93
+                    ZIndex: =2
+
+                Label6_1 As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(255, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =57
+                    Size: =25
+                    Text: ="Custo Total de estoque"
+                    Width: =532
+                    X: =53
+                    Y: =93
+                    ZIndex: =3
+
+                Rectangle4_3 As rectangle:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Fill: =RGBA(29, 29, 29, 1)
+                    Height: =2
+                    Width: =520
+                    X: =53
+                    Y: =148
+                    ZIndex: =4
+
+                Image4 As image:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =70
+                    Image: ='esmolas-unscreen'
+                    Width: =70
+                    X: =69
+                    Y: =180
+                    ZIndex: =7
+
+                Label8_2 As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(29, 29, 29, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =37
+                    Size: =17
+                    Text: ="Saldo Total"
+                    Width: =214
+                    X: =174
+                    Y: =180
+                    ZIndex: =8
+
+                lblSaldoCTs As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(255, 0, 0, 0.9)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =59
+                    Size: =25
+                    Text: |-
+                        ="R$:  "& Sum(dtbProduto,CustoTotal)
+                    Width: =411
+                    X: =174
+                    Y: =217
+                    ZIndex: =9
+
+                Icon1 As icon.ChevronRight:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(164, 164, 164, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Icon: =Icon.NextArrow
+                    OnSelect: =
+                    X: =509
+                    Y: =212
+                    ZIndex: =10
+
+            Investimentos As group:
+                Height: =5
+                Width: =5
+                X: =1
+                Y: =-53
+                ZIndex: =18
+
+                HtmlText4_2 As htmlViewer:
+                    Height: =242
+                    HtmlText: |-
+                        ="<div style='
+                        width: 550px;
+                        height: 200px;
+                        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+                        box-shadow: rgba(100, 100, 100, 0.45) 4px 4px 4px 4px;
+                        border-radius: 15px;
+                        '>
+                        </div>"
+                    Width: =588
+                    X: =40
+                    Y: =370
+                    ZIndex: =11
+
+                Label6_5 As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(19, 189, 47, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =57
+                    Size: =25
+                    Text: ="Valor do Estoque para Venda"
+                    Width: =532
+                    X: =54
+                    Y: =370
+                    ZIndex: =12
+
+                Rectangle4_4 As rectangle:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Fill: =RGBA(29, 29, 29, 1)
+                    Height: =2
+                    Width: =520
+                    X: =54
+                    Y: =425
+                    ZIndex: =13
+
+                Image4_1 As image:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =70
+                    Image: ='analise-unscreen'
+                    Width: =70
+                    X: =70
+                    Y: =457
+                    ZIndex: =14
+
+                Label8_3 As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(29, 29, 29, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =37
+                    Size: =17
+                    Text: ="Saldo Total"
+                    Width: =214
+                    X: =175
+                    Y: =457
+                    ZIndex: =15
+
+                lblSaldoInvestimento As label:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(19, 189, 47, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =59
+                    Size: =25
+                    Text: |-
+                        ="R$:  "& Sum(dtbProduto, Valor * Estoque)
+                    Width: =411
+                    X: =175
+                    Y: =494
+                    ZIndex: =16
+
+                Icon1_1 As icon.ChevronRight:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(164, 164, 164, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Icon: =Icon.NextArrow
+                    X: =510
+                    Y: =489
+                    ZIndex: =17
+
+            Rectangle4_5 As rectangle:
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Fill: =RGBA(29, 29, 29, 1)
+                Height: =5
+                Width: =531
+                X: =55
+                Y: =325
+                ZIndex: =19
+

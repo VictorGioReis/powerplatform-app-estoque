@@ -1,0 +1,16 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr7ec_dtbproduto_forms",
+      "Namespace": "dtb Produtos (Formulários)",
+      "Values": {
+        "Informações": "a0d7b7f1-4adc-40fa-bdfa-f8dcb983ce08"
+      }
+    },
+    {
+      "Kind": "default.cds_activitypointer_forms",
+      "Namespace": "Atividades (Formulários)",
+      "Values": {}
+    }
+  ]
+}
