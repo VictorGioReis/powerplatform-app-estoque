@@ -365,7 +365,7 @@ CadastroProduto As screen:
                 HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(79, 79, 79, 1)
-                Items: =["Cervejas","Refrigerantes","Destilados","Vinhos","Doces","Salgados"]
+                Items: =["Ovos","Cervejas","Refrigerantes","Destilados","Vinhos","Doces","Salgados"]
                 PaddingBottom: =5
                 PaddingLeft: =12
                 PaddingRight: =5
