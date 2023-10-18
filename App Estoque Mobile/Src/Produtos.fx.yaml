@@ -715,6 +715,7 @@
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Tooltip: ="Detalhes do Produto"
                     X: =507
+                    Y: =13
                     ZIndex: =9
 
                 Rectangle2 As rectangle:
