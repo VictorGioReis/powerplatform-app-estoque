@@ -383,7 +383,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/18/2023 16:09:21",
+  "HeaderLastSavedDateTimeUTC": "10/18/2023 16:12:32",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "d4242a16-0a34-475f-a165-dd77de37bd2c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/2ee5167599bb4f96ac8a4f126c3732e7\""
@@ -459,7 +459,7 @@
     "varredura-qr_1": "https://docserverpwaprodsbr.blob.core.windows.net/12a8f33d-7742-4cc1-9c63-894f80c015e8-1/resource/Assets0Images03f3691fd-6c59-4f60-aef0-bea88adb407f.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-18T15%3A14%3A13Z&ske=2023-10-19T15%3A29%3A13Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-10-19T15%3A29%3A13Z&sr=b&sp=r&sig=X1YQYGY%2F8QiXOsoPCQUOG88hoMi7hdum4ZKZD3eQYDE%3D",
     "zyro-image": "https://docserverpwaprodsbr.blob.core.windows.net/12a8f33d-7742-4cc1-9c63-894f80c015e8-1/resource/Assets0Images073af4478-c950-4ba7-b048-1def3b354c15.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-18T15%3A14%3A13Z&ske=2023-10-19T15%3A29%3A13Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-10-19T15%3A29%3A13Z&sr=b&sp=r&sig=jOcw5WyJIBT7rHyeCRHOyUlAHyQ3ZaySQgakH4LpfSw%3D"
   },
-  "OldLogoFileName": "hmlcxq3z.jpg",
+  "OldLogoFileName": "xhoui2pw.jpg",
   "OrderComponentMetadata": {
     "cf954e3224614556ac03dc2d698a85d8": 0
   },
@@ -1283,7 +1283,7 @@
     "Canvas1_2": 165,
     "Canvas1_3": 234,
     "Canvas1_4": 287,
-    "card-new-cad-prod": 77,
+    "card-new-cad-prod": 78,
     "card-new-venda": 170,
     "card-pesquisa-prod": 85,
     "Cartoes": 49,
@@ -1421,7 +1421,7 @@
     "HtmlText1": 105,
     "HtmlText2_1": 6,
     "HtmlText2_13": 65,
-    "HtmlText2_14": 79,
+    "HtmlText2_14": 77,
     "HtmlText2_15": 101,
     "HtmlText2_16": 161,
     "HtmlText2_17": 169,
@@ -1480,7 +1480,7 @@
     "Image2": 356,
     "Image2_2": 14,
     "Image2_3": 11,
-    "Image2_4": 78,
+    "Image2_4": 79,
     "Image2_5": 171,
     "Image2_6": 86,
     "Image3_4": 39,
