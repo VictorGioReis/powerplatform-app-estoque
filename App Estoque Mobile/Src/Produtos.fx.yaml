@@ -509,8 +509,7 @@
                 ZIndex: =1
 
             Rectangle4_7 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
+                BorderColor: =RGBA(255, 255, 255, 1)
                 BorderThickness: =2
                 DisabledFill: =RGBA(166, 166, 166, 1)
                 DisplayMode: =DisplayMode.View
@@ -560,7 +559,7 @@
                     BorderThickness: =2
                     DisabledFill: =RGBA(166, 166, 166, 1)
                     DisplayMode: =DisplayMode.View
-                    Fill: =If(ThisItem.IsSelected,RGBA(255, 200, 61, 0.4), RGBA(255, 200, 61, 0))
+                    Fill: =If(ThisItem.IsSelected,RGBA(255, 200, 61, 0.2), RGBA(255, 200, 61, 0))
                     FocusedBorderThickness: =4
                     Height: =225
                     HoverFill: =RGBA(255, 200, 61, 0.4)
