@@ -244,7 +244,7 @@ CadastroProduto As screen:
                 HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(79, 79, 79, 1)
-                Items: =["Lata 350ml","Garrafa 600ml", "Litro","Lata 269ml","Garrafa 750ml","150g"]
+                Items: =["UN","Cx","Lata 350ml","Garrafa 600ml", "Litro","Lata 269ml","Garrafa 750ml","150g"]
                 PaddingBottom: =5
                 PaddingLeft: =12
                 PaddingRight: =5
