@@ -549,6 +549,18 @@
                     Y: =1
                     ZIndex: =7
 
+                Icon3 As icon.ZoomIn:
+                    BorderColor: =RGBA(197, 203, 207, 1)
+                    Color: =RGBA(197, 203, 207, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =48
+                    HoverColor: =ColorFade(Color.FireBrick, 20%)
+                    Icon: =Icon.ZoomIn
+                    OnSelect: =Select(Parent)
+                    X: =460
+                    ZIndex: =8
+
     CabecalhoProduto As group:
         Height: =5
         Width: =5
