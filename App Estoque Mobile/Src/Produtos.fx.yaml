@@ -189,7 +189,8 @@
                         '>
                         </div>"
                     Width: =577
-                    Y: =20
+                    X: =35
+                    Y: =60
                     ZIndex: =1
 
                 Label2_6 As label:
@@ -223,8 +224,8 @@
                     Image: ='caixa-de-entrega'
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
-                    X: =38
-                    Y: =28
+                    X: =55
+                    Y: =76
                     ZIndex: =3
 
                 "'btn-newProduto' As button":
