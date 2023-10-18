@@ -554,6 +554,21 @@
                 Y: =84
                 ZIndex: =12
 
+                Rectangle3 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledFill: =RGBA(166, 166, 166, 1)
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 200, 61, 0)
+                    FocusedBorderThickness: =4
+                    Height: =225
+                    HoverFill: =RGBA(255, 200, 61, 0.4)
+                    OnSelect: =Select(Parent)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =609
+                    ZIndex: =1
+
                 Label14 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
@@ -572,7 +587,7 @@
                     Width: =410
                     X: =120
                     Y: =9
-                    ZIndex: =1
+                    ZIndex: =2
 
                 Label15 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -591,7 +606,7 @@
                     Width: =439
                     X: =123
                     Y: =48
-                    ZIndex: =2
+                    ZIndex: =3
 
                 Image16 As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -612,7 +627,7 @@
                     RadiusTopRight: =150
                     X: =9
                     Y: =9
-                    ZIndex: =3
+                    ZIndex: =4
 
                 Rectangle6 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -628,7 +643,7 @@
                     Width: =550
                     X: =9
                     Y: =190
-                    ZIndex: =4
+                    ZIndex: =5
 
                 Label14_1 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -648,7 +663,7 @@
                     Width: =342
                     X: =22
                     Y: =135
-                    ZIndex: =5
+                    ZIndex: =6
 
                 Label14_2 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -668,7 +683,7 @@
                     Width: =190
                     X: =381
                     Y: =135
-                    ZIndex: =6
+                    ZIndex: =7
 
                 Icon3 As icon.ZoomIn:
                     BorderColor: =RGBA(109, 109, 109, 1)
@@ -706,21 +721,6 @@
                     Width: =574
                     Y: =215
                     ZIndex: =9
-
-                Rectangle3 As rectangle:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    DisabledFill: =RGBA(166, 166, 166, 1)
-                    DisplayMode: =DisplayMode.View
-                    Fill: =RGBA(255, 200, 61, 0)
-                    FocusedBorderThickness: =4
-                    Height: =225
-                    HoverFill: =RGBA(255, 200, 61, 0.4)
-                    OnSelect: =Select(Parent)
-                    PressedFill: =RGBA(0, 0, 0, 0)
-                    Width: =609
-                    ZIndex: =10
 
     CabecalhoProduto As group:
         Height: =5
