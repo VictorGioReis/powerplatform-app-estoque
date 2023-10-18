@@ -48,6 +48,26 @@
                 Y: =376
                 ZIndex: =7
 
+            "'icon-categoria' As image":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                DisplayMode: =DisplayMode.View
+                FocusedBorderThickness: =4
+                Height: =48
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='lista (2)'
+                OnSelect: =
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =48
+                X: =76
+                Y: =795
+                ZIndex: =17
+
             icon_retornar As icon.Camera:
                 BorderColor: =RGBA(109, 109, 109, 1)
                 Color: =RGBA(255, 200, 61, 1)
@@ -68,7 +88,7 @@
                 X: =535
                 ZIndex: =20
 
-            Dropdown1 As dropdown:
+            "'sel-PesquisaCategoria' As dropdown":
                 BorderColor: =RGBA(109, 109, 109, 1)
                 ChevronBackground: =RGBA(31, 31, 31, 1)
                 ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -82,7 +102,7 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(31, 31, 31, 1)
                 Font: =Font.'Segoe UI'
-                Height: =62
+                Height: =56
                 HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(79, 79, 79, 1)
@@ -97,9 +117,9 @@
                 SelectionColor: =RGBA(31, 31, 31, 1)
                 SelectionFill: =RGBA(255, 200, 61, 1)
                 Size: =21
-                Width: =440
-                X: =50
-                Y: =530
+                Width: =422
+                X: =150
+                Y: =794
                 ZIndex: =21
 
             "'card-pesquisa-prod' As group":
@@ -310,69 +330,6 @@
                     Y: =208
                     ZIndex: =5
 
-            PesquisaCategoria As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =49
-
-                "'cbx-PesquisaCategoria' As combobox":
-                    BorderColor: =RGBA(109, 109, 109, 1)
-                    ChevronBackground: =RGBA(31, 31, 31, 1)
-                    ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-                    ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-                    ChevronFill: =RGBA(218, 218, 218, 1)
-                    ChevronHoverBackground: =RGBA(79, 79, 79, 1)
-                    ChevronHoverFill: =RGBA(218, 218, 218, 1)
-                    Color: =RGBA(255, 255, 255, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    DisplayFields: =["Value"]
-                    Fill: =RGBA(31, 31, 31, 1)
-                    Font: =Font.'Segoe UI'
-                    Height: =56
-                    HoverBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =RGBA(79, 79, 79, 1)
-                    InputTextPlaceholder: ="Buscar por categoria"
-                    IsSearchable: =false
-                    Items: =Distinct(dtbProduto, Categoria)
-                    PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
-                    PressedColor: =RGBA(31, 31, 31, 1)
-                    PressedFill: =RGBA(255, 200, 61, 1)
-                    Reset: =true
-                    SearchFields: =["Value"]
-                    SearchItems: =[]
-                    SelectionColor: =RGBA(31, 31, 31, 1)
-                    SelectionFill: =RGBA(255, 200, 61, 1)
-                    Size: =21
-                    Width: =422
-                    X: =150
-                    Y: =791
-                    ZIndex: =15
-
-                "'icon-categoria' As image":
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledFill: =RGBA(0, 0, 0, 0)
-                    DisplayMode: =DisplayMode.View
-                    FocusedBorderThickness: =4
-                    Height: =48
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: ='lista (2)'
-                    OnSelect: =
-                    PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedFill: =RGBA(0, 0, 0, 0)
-                    Width: =48
-                    X: =76
-                    Y: =795
-                    ZIndex: =17
-
             PesquisaNomeProduto As group:
                 Height: =5
                 Width: =5
@@ -574,7 +531,7 @@
                             Descricao,
                             'txt-PesquisaProduto'.Text
                         ),
-                        IsBlank('cbx-PesquisaCategoria'.Selected.Value) || Categoria = 'cbx-PesquisaCategoria'.Selected.Value
+                        IsBlank('sel-PesquisaCategoria'.Selected.Value) || Categoria = 'sel-PesquisaCategoria'.Selected.Value
                         ),
                         "Cod_Produto",
                         If(varCadProdutoOrdem, SortOrder.Ascending, SortOrder.Descending))

@@ -1834,36 +1834,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Produtos.Canvas1_1.DataCard1_1.'cbx-PesquisaCategoria'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Produtos.Canvas1_1.DataCard1_1.'cbx-PesquisaCategoria'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Produtos",
-                "type": "Produtos.Canvas1_1.DataCard1_1.'cbx-PesquisaCategoria'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Produtos.Canvas1_1.DataCard2_1.'glr-ProdutosCadastrados'.AccessibleLabel"
                 }
               ],
@@ -2854,19 +2824,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Produtos.Canvas1_1.DataCard1_1.Dropdown1.AccessibleLabel"
+                  "fullyQualifiedName": "Produtos.Canvas1_1.DataCard1_1.'sel-PesquisaCategoria'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Produtos.Canvas1_1.DataCard1_1.Dropdown1.AccessibleLabel",
+                  "fullyQualifiedName": "Produtos.Canvas1_1.DataCard1_1.'sel-PesquisaCategoria'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Produtos",
-                "type": "Produtos.Canvas1_1.DataCard1_1.Dropdown1"
+                "type": "Produtos.Canvas1_1.DataCard1_1.'sel-PesquisaCategoria'"
               }
             }
           ],
