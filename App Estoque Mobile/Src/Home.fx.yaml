@@ -110,22 +110,24 @@
 
                 Image1_1 As image:
                     BorderColor: =RGBA(255, 191, 0, 1)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
+                    BorderThickness: =1
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =4
                     Height: =175
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: ='zyro-image'
-                    ImagePosition: =ImagePosition.Stretch
+                    Image: ='vreis-logo'
+                    PaddingBottom: =2
+                    PaddingLeft: =2
+                    PaddingRight: =2
+                    PaddingTop: =2
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
-                    RadiusBottomLeft: =350
-                    RadiusBottomRight: =350
-                    RadiusTopLeft: =350
-                    RadiusTopRight: =350
+                    RadiusBottomLeft: =100
+                    RadiusBottomRight: =100
+                    RadiusTopLeft: =100
+                    RadiusTopRight: =100
                     Width: =180
                     X: =44
                     Y: =30
@@ -143,7 +145,7 @@
                     FontWeight: =FontWeight.Bold
                     Height: =77
                     Size: =17
-                    Text: =User().Email
+                    Text: ="VictorReis@email.onmicrosoft.com"
                     Width: =449
                     X: =124
                     Y: =240
