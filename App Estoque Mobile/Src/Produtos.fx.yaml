@@ -536,19 +536,6 @@
                     Y: =135
                     ZIndex: =6
 
-                "'icon-cadprod_4' As image":
-                    BorderColor: =RGBA(197, 203, 207, 1)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Height: =50
-                    Image: =arquivo
-                    OnSelect: |-
-                        =UpdateContext({varViewDetailProduto: true})
-                    Width: =50
-                    X: =524
-                    Y: =1
-                    ZIndex: =7
-
                 Icon3 As icon.ZoomIn:
                     BorderColor: =RGBA(197, 203, 207, 1)
                     Color: =RGBA(197, 203, 207, 1)
@@ -559,7 +546,8 @@
                     Icon: =Icon.ZoomIn
                     OnSelect: |-
                         =UpdateContext({varViewDetailProduto: true})
-                    X: =460
+                    Tooltip: ="Detalhes do Produto"
+                    X: =507
                     ZIndex: =8
 
     CabecalhoProduto As group:
