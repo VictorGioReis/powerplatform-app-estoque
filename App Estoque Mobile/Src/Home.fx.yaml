@@ -70,7 +70,7 @@
                     RadiusTopLeft: =100
                     RadiusTopRight: =100
                     Width: =180
-                    X: =48
+                    X: =58
                     Y: =45
                     ZIndex: =2
 
@@ -89,7 +89,7 @@
                     Text: ="VictorReis@email.onmicrosoft.com"
                     Width: =449
                     X: =144
-                    Y: =240
+                    Y: =270
                     ZIndex: =3
 
                 Label2_4 As label:
@@ -97,7 +97,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(99, 118, 250, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -145,7 +145,7 @@
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Width: =80
                     X: =68
-                    Y: =237
+                    Y: =267
                     ZIndex: =6
 
                 Image2_3 As image:
@@ -168,7 +168,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    DisabledFill: =RGBA(217, 217, 217, 1)
+                    DisabledFill: =RGBA(51, 51, 51, 1)
                     DisplayMode: =DisplayMode.Disabled
                     Fill: =RGBA(255, 191, 0, 1)
                     FocusedBorderThickness: =4
@@ -176,7 +176,7 @@
                     HoverFill: =RGBA(0, 120, 212, 1)
                     PressedFill: =RGBA(0, 120, 212, 1)
                     Width: =501
-                    X: =48
+                    X: =68
                     Y: =234
                     ZIndex: =8
 
@@ -243,8 +243,9 @@
                     <div style='
                     width: 95%;
                     height: 750px;
-                    background-color: #8EC5FC;
-                    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+                    background-color: #9dafff;
+                    background-image: linear-gradient(62deg, #9dafff 0%, #6376fa 89%);
+                    
                     
                     
                     
@@ -1256,11 +1257,12 @@
             ZIndex: =1
 
         Title1 As label:
+            Align: =Align.Center
             Color: =RGBA(99, 118, 250, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =Self.Size * 1.8
+            Height: =25
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1268,9 +1270,8 @@
             PaddingTop: =0
             Text: =ThisItem.Label
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 64
-            X: =45
-            Y: =70
+            Width: =173
+            Y: =60
             ZIndex: =2
 
     TextInput3_1 As text:
@@ -1343,8 +1344,9 @@
                 ="<div style='
                 width: 600px;
                 height: 1090px;
-                background-color: #8EC5FC;
-                background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+                background-color: #9dafff;
+                background-image: linear-gradient(62deg, #9dafff 0%, #6376fa 89%);
+                
                 
                 box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
                 border-radius: 40px;
@@ -1386,6 +1388,7 @@
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
+            Height: =58
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: ='xmark-retangulo'
@@ -1396,7 +1399,7 @@
             Tooltip: ="Fechar"
             Visible: =varViewDetailProduto1
             X: =280
-            Y: =1036
+            Y: =1073
             ZIndex: =10
 
         frmViewDetailProdutos_1 As form:
