@@ -1217,7 +1217,7 @@
         DelayItemLoading: =true
         Height: =91
         Items: |-
-            =Table({Id:1, Tela: Produtos, Label: "Categoria", Icon: categorizacao},{Id:2, Tela: Blank(), Label: "Produtos", Icon: 'caixa-aberta'},{Id:3, Tela:Blank(), Label: "Entrada", Icon: 'caixa-de-entrada'})
+            =Table({Id:1, Tela: Produtos, Label: "Categoria", Icon: categorizacao},{Id:2, Tela: 'Vendas Realizadas', Label: "Produtos", Icon: 'caixa-aberta'},{Id:3, Tela:Blank(), Label: "Entrada", Icon: 'caixa-de-entrada'})
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =173
