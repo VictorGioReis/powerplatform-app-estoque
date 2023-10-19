@@ -298,13 +298,13 @@
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
                     Height: =70
-                    HoverBorderColor: =RGBA(255, 255, 0, 1)
-                    HoverColor: =RGBA(255, 255, 0, 1)
+                    HoverBorderColor: =RGBA(99, 118, 250, 1)
+                    HoverColor: =RGBA(99, 118, 250, 1)
                     HoverFill: =
                     OnSelect: =ResetForm('frm-cadProduto');NewForm('frm-cadProduto');Navigate(CadastroProduto,ScreenTransition.Cover)
                     PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
                     PressedColor: =RGBA(224, 228, 230, 1)
-                    PressedFill: =RGBA(255, 255, 0, 0.67)
+                    PressedFill: =RGBA(99, 118, 250, 0.24)
                     RadiusBottomLeft: =15
                     RadiusBottomRight: =15
                     RadiusTopLeft: =15
