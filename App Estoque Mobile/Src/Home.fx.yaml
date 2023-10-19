@@ -137,15 +137,15 @@
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =4
-                    Height: =39
+                    Height: =80
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: ='e-mail_1'
+                    Image: ='o-email-unscreen'
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
-                    Width: =33
-                    X: =79
-                    Y: =258
+                    Width: =80
+                    X: =48
+                    Y: =237
                     ZIndex: =7
 
                 Image2_3 As image:
@@ -155,15 +155,13 @@
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =4
-                    Height: =58
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: ='do-utilizador (1)'
+                    Image: ='iluminacao-unscreen'
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
-                    Width: =60
-                    X: =248
-                    Y: =137
+                    X: =228
+                    Y: =95
                     ZIndex: =8
 
                 Rectangle2_1 As rectangle:
@@ -186,7 +184,8 @@
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                DisabledFill: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(99, 118, 250, 1)
+                DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(255, 191, 0, 1)
                 FocusedBorderThickness: =4
                 Height: =5
@@ -196,98 +195,6 @@
                 X: =31
                 Y: =418
                 ZIndex: =22
-
-            glrMenu1 As gallery.galleryVertical:
-                BorderColor: =RGBA(166, 166, 166, 1)
-                Height: =770
-                Items: |-
-                    =Table({Id:1, Tela: Produtos, Label: "Produtos", Icon: 'caixa-aberta-cheia (2)'},{Id:2, Tela: Blank(), Label: "Estoque", Icon: 'armazem-alt'},{Id:3, Tela:Blank(), Label: "Movimentações", Icon: caixas})
-                Layout: =Layout.Vertical
-                ShowScrollbar: =false
-                TemplateSize: =237
-                Transition: =Transition.Push
-                Width: =343
-                X: =40
-                Y: =555
-                ZIndex: =23
-
-                btnNew_4 As group:
-                    Height: =5
-                    Width: =5
-                    X: =20
-                    Y: =17
-                    ZIndex: =5
-
-                    HtmlText5_4 As htmlViewer:
-                        Height: =235
-                        HtmlText: |-
-                            ="<div style='
-                            width: 225px;
-                            height: 220px;
-                            
-                            background: #232526;  /* fallback for old browsers */
-                            background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-                            background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                            
-                            
-                            box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
-                            border-radius: 15px;
-                            '>
-                            </div>"
-                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
-                        Width: =237
-                        X: =39
-                        ZIndex: =1
-
-                    Label7_4 As label:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(224, 228, 230, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Height: =70
-                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
-                        Size: =21
-                        Text: =ThisItem.Label
-                        Width: =237
-                        X: =39
-                        Y: =152
-                        ZIndex: =2
-
-                    Circle2_4 As circle:
-                        BorderColor: =RGBA(255, 255, 0, 1)
-                        BorderStyle: =BorderStyle.Dotted
-                        BorderThickness: =1
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        Fill: =RGBA(255, 255, 255, 0.06)
-                        Height: =160
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =160
-                        X: =77
-                        Y: =11
-                        ZIndex: =3
-
-                    Image3_4 As image:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: =ThisItem.Icon
-                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        X: =107
-                        Y: =33
-                        ZIndex: =4
 
             ResumoSaldos As group:
                 Height: =5
@@ -506,114 +413,20 @@
                     Y: =500
                     ZIndex: =21
 
-            glrMenu2 As gallery.galleryVertical:
-                BorderColor: =RGBA(166, 166, 166, 1)
-                Height: =770
-                Items: |-
-                    =Table({Id: 4, Tela: Vendas, Label: "Vendas", Icon: 'usuarios-alt'},{Id:5, Tela: Blank(), Label: "Entradas", Icon: 'dolar-funil'},{Id:6, Tela: Blank(), Label: "Caixa", Icon: 'banco (3)'})
-                Layout: =Layout.Vertical
-                ShowScrollbar: =false
-                TemplateSize: =240
-                Transition: =Transition.Push
-                Width: =343
-                X: =297
-                Y: =548
-                ZIndex: =24
-
-                btnNew_5 As group:
-                    Height: =5
-                    Width: =5
-                    X: =20
-                    Y: =17
-                    ZIndex: =5
-
-                    HtmlText5_5 As htmlViewer:
-                        Height: =235
-                        HtmlText: |-
-                            ="<div style='
-                            width: 225px;
-                            height: 220px;
-                            
-                            background: #232526;  /* fallback for old browsers */
-                            background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-                            background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                            
-                            
-                            box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
-                            border-radius: 15px;
-                            '>
-                            </div>"
-                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
-                        Width: =237
-                        X: =39
-                        Y: =4
-                        ZIndex: =1
-
-                    Label7_5 As label:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        Color: =RGBA(224, 228, 230, 1)
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =70
-                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
-                        Size: =21
-                        Text: =ThisItem.Label
-                        Width: =237
-                        X: =40
-                        Y: =157
-                        ZIndex: =2
-
-                    Circle2_5 As circle:
-                        BorderColor: =RGBA(255, 255, 0, 1)
-                        BorderStyle: =BorderStyle.Dotted
-                        BorderThickness: =1
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        Fill: =RGBA(255, 255, 255, 0.1)
-                        Height: =160
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Width: =160
-                        X: =78
-                        Y: =16
-                        ZIndex: =3
-
-                    Image3_5 As image:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        DisabledFill: =RGBA(0, 0, 0, 0)
-                        FocusedBorderThickness: =4
-                        HoverBorderColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        Image: =ThisItem.Icon
-                        OnSelect: =ThisItem.Id; Navigate(ThisItem.Tela,ScreenTransition.Fade)
-                        PressedBorderColor: =RGBA(0, 0, 0, 0)
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        X: =108
-                        Y: =38
-                        ZIndex: =4
-
             "'title-menu' As label":
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =RGBA(224, 228, 230, 1)
+                Color: =RGBA(82, 82, 82, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Patrick Hand'
                 FontWeight: =FontWeight.Semibold
-                Height: =64
+                Height: =61
                 Size: =35
-                Text: ="Menu"
-                Width: =249
+                Text: ="Pesquisa rápida"
+                Width: =430
                 X: =94
                 Y: =480
                 ZIndex: =25
@@ -625,16 +438,154 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
-                Height: =58
+                Height: =70
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                Image: ='lista-de-reproducao'
+                Image: ='pesquisar-unscreen'
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =5
+                PaddingTop: =5
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =49
+                Width: =70
                 X: =30
-                Y: =486
+                Y: =476
                 ZIndex: =26
+
+            HtmlText2_29 As htmlViewer:
+                Height: =543
+                HtmlText: |-
+                    ="<center>
+                    <div style='
+                    width: 95%;
+                    height: 500px;
+                    background-color: #8EC5FC;
+                    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+                    
+                    
+                    
+                    box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
+                    border-radius: 40px;
+                    '>
+                    </div>"
+                Width: =640
+                Y: =571
+                ZIndex: =27
+
+            Rectangle4_8 As rectangle:
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =2
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(224, 228, 230, 1)
+                FocusedBorderThickness: =4
+                Height: =10
+                HoverFill: =RGBA(0, 120, 212, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =100
+                X: =263
+                Y: =587
+                ZIndex: =28
+
+            "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                BorderColor: =RGBA(166, 166, 166, 1)
+                DelayItemLoading: =true
+                Height: =471
+                Items: =dtbProduto
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =448
+                Width: =549
+                X: =50
+                Y: =610
+                ZIndex: =29
+
+                Image7 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =72
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =ThisItem.Imagem
+                    OnSelect: =Select(Parent)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =8
+                    RadiusBottomRight: =8
+                    RadiusTopLeft: =8
+                    RadiusTopRight: =8
+                    Width: =72
+                    X: =16
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                Title2 As label:
+                    Color: =RGBA(50, 49, 48, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.Título
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 173
+                    X: =103
+                    Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
+                    ZIndex: =2
+
+                Subtitle2 As label:
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =12
+                    Text: =ThisItem.Cod_Produto
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Title2.Width
+                    X: =Title2.X
+                    Y: =Title2.Y + Title2.Height
+                    ZIndex: =3
+
+                NextArrow1 As icon.ChevronRight:
+                    AccessibleLabel: =Self.Tooltip
+                    Color: =RGBA(166, 166, 166, 1)
+                    Height: =50
+                    Icon: =Icon.ChevronRight
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =16
+                    PaddingLeft: =16
+                    PaddingRight: =16
+                    PaddingTop: =16
+                    Tooltip: ="Exibir detalhes do item"
+                    Width: =50
+                    X: =Parent.TemplateWidth - Self.Width - 12
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =4
+
+                Rectangle9 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    Fill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                    Height: =
+                    OnSelect: =Select(Parent)
+                    Visible: =ThisItem.IsSelected
+                    Width: =4
+                    ZIndex: =6
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1011,7 +962,7 @@
         Width: =536
         X: =74
         Y: =1045
-        ZIndex: =8
+        ZIndex: =4
 
         Image3 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1057,6 +1008,32 @@
             Y: =70
             ZIndex: =2
 
+    TextInput3_1 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(99, 118, 250, 1)
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =91
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(0, 120, 212, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =21
+        Width: =640
+        ZIndex: =5
+
     Label3 As label:
         Align: =Align.Center
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -1068,24 +1045,9 @@
         FocusedBorderThickness: =4
         Font: =Font.'Patrick Hand'
         FontWeight: =FontWeight.Bold
-        Height: =70
+        Height: =82
         Size: =45
         Text: ="Home"
         Width: =640
-        ZIndex: =9
-
-    Rectangle5 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledFill: =RGBA(99, 118, 250, 1)
-        DisplayMode: =DisplayMode.Disabled
-        Fill: =RGBA(99, 118, 250, 1)
-        FocusedBorderThickness: =4
-        Height: =2
-        HoverFill: =RGBA(0, 120, 212, 1)
-        PressedFill: =RGBA(0, 120, 212, 1)
-        Width: =640
-        Y: =90
-        ZIndex: =10
+        ZIndex: =6
 

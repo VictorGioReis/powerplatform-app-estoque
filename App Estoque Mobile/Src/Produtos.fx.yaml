@@ -619,10 +619,10 @@
                     OnSelect: =Select(Parent)
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
-                    RadiusBottomLeft: =150
-                    RadiusBottomRight: =150
-                    RadiusTopLeft: =150
-                    RadiusTopRight: =150
+                    RadiusBottomLeft: =250
+                    RadiusBottomRight: =250
+                    RadiusTopLeft: =250
+                    RadiusTopRight: =250
                     X: =9
                     Y: =9
                     ZIndex: =5
