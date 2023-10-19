@@ -2,39 +2,19 @@
     Fill: =RGBA(217, 217, 217, 1)
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
-    HtmlText2_2 As htmlViewer:
-        AutoHeight: =true
-        Height: =88
-        HtmlText: |-
-            ="<div style='
-            width: 625px;
-            height: 70px;
-            background: #FBFBFC;
-            
-            
-            
-            
-            border-radius: 15px;
-            '>
-            </div>"
-        Width: =640
-        Y: =1048
-        ZIndex: =1
-
     RectQuickActionBar1 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(0, 0, 0, 0)
         Height: =88
         Width: =Parent.Width
-        Y: =1048
-        ZIndex: =2
+        ZIndex: =1
 
     Canvas1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
         Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
-        ZIndex: =15
+        ZIndex: =2
 
         DataCard1 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -994,4 +974,116 @@
                 X: =55
                 Y: =325
                 ZIndex: =19
+
+    TextInput3 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =70
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(0, 120, 212, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =21
+        Width: =640
+        Y: =1066
+        ZIndex: =3
+
+    Image1 As image:
+        AccessibleLabel: ="Produtos"
+        BorderColor: =RGBA(118, 0, 0, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='caixa-aberta'
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        TabIndex: =1
+        Tooltip: ="Produtos"
+        Width: =70
+        X: =142
+        Y: =1066
+        ZIndex: =5
+
+    Image1_2 As image:
+        BorderColor: =RGBA(118, 0, 0, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='caixa-aberta'
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        TabIndex: =1
+        Tooltip: ="Produtos"
+        Width: =70
+        X: =285
+        Y: =1066
+        ZIndex: =6
+
+    Image1_3 As image:
+        BorderColor: =RGBA(118, 0, 0, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='caixa-aberta'
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        TabIndex: =1
+        Tooltip: ="Produtos"
+        Width: =70
+        X: =431
+        Y: =1066
+        ZIndex: =7
 
