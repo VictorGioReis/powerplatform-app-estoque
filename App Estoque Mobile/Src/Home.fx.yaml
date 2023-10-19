@@ -1403,7 +1403,7 @@
             DataSource: =dtbProduto
             DefaultMode: =FormMode.View
             Height: =670
-            Item: ='glr-ProdutosCadastrados'.Selected
+            Item: ='glr-PesquisaProd-flash'.Selected
             Visible: =varViewDetailProduto1
             Width: =586
             X: =32
