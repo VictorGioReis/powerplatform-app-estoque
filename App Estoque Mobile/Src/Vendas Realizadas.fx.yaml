@@ -300,6 +300,7 @@
         PressedContentColor: =RGBA(56, 96, 178, 1)
         PressedFillColor: =RGBA(255, 255, 255, 1)
         TextColor: =RGBA(255, 255, 255, 1)
+        Units: ='MeasureInMR.Units'.MSR_Centimeters
         Width: =280
         X: =57
         Y: =552
