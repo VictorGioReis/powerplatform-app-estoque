@@ -1,5 +1,13 @@
 "Produtos As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(217, 217, 217, 1)
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    RectQuickActionBar1_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =2
 
     Canvas1_1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -21,7 +29,7 @@
             ZIndex: =1
 
             LblAppName1_3 As label:
-                Color: =RGBA(224, 228, 230, 1)
+                Color: =RGBA(99, 118, 250, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Patrick Hand'
                 FontWeight: =FontWeight.Semibold
@@ -58,7 +66,7 @@
                 Height: =48
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                Image: ='lista (2)'
+                Image: ='lista-unscreen'
                 OnSelect: =
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -97,19 +105,19 @@
                 HtmlText2_19 As htmlViewer:
                     Height: =456
                     HtmlText: |-
-                        ="<div style='
+                        ="<center>
+                        <div style='
                         width: 550px;
-                        height: 450px;
-                        background: #232526;  /* fallback for old browsers */
-                        background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-                        background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                        height: 440px;
+                        background-color: #9dafff;
+                        background-image: linear-gradient(62deg, #9dafff 0%, #6376fa 89%);
+                        
                         
                         box-shadow: rgba(100, 100, 100, 0.45) 4px 4px 4px 4px;
                         border-radius: 15px;
                         '>
                         </div>"
-                    Width: =577
-                    X: =30
+                    Width: =640
                     Y: =430
                     ZIndex: =8
 
@@ -118,7 +126,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(210, 210, 210, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -141,7 +149,7 @@
                     FocusedBorderThickness: =4
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: =procurando
+                    Image: =pesquisar
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Width: =80
@@ -227,19 +235,19 @@
                 HtmlText2_14 As htmlViewer:
                     Height: =390
                     HtmlText: |-
-                        ="<div style='
+                        ="<center>
+                        <div style='
                         width: 550px;
                         height: 250px;
-                        background: #232526;  /* fallback for old browsers */
-                        background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-                        background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                        background-color: #9dafff;
+                        background-image: linear-gradient(62deg, #9dafff 0%, #6376fa 89%);
+                        
                         
                         box-shadow: rgba(100, 100, 100, 0.45) 4px 4px 4px 4px;
                         border-radius: 15px;
                         '>
                         </div>"
-                    Width: =577
-                    X: =35
+                    Width: =640
                     Y: =60
                     ZIndex: =1
 
@@ -248,7 +256,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(210, 210, 210, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -271,7 +279,7 @@
                     FocusedBorderThickness: =4
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: ='caixa-de-entrega'
+                    Image: ='melhor-produto'
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     X: =55
@@ -279,12 +287,12 @@
                     ZIndex: =3
 
                 "'btn-newProduto' As button":
-                    BorderColor: =RGBA(255, 191, 0, 1)
-                    Color: =RGBA(255, 191, 0, 1)
+                    BorderColor: =RGBA(51, 51, 51, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
-                    Fill: =RGBA(218, 228, 235, 0.25)
+                    Fill: =RGBA(217, 217, 217, 1)
                     FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -296,10 +304,10 @@
                     PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
                     PressedColor: =RGBA(224, 228, 230, 1)
                     PressedFill: =RGBA(255, 255, 0, 0.67)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =24
                     Text: ="Cadastrar"
                     Width: =280
@@ -374,7 +382,7 @@
                     Height: =48
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: =texto
+                    Image: ='caixa-de-texto-unscreen'
                     OnSelect: =
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
@@ -431,7 +439,7 @@
                     Height: =48
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: ='varredura-qr_1'
+                    Image: ='codigo-qr-unscreen'
                     OnSelect: =
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
@@ -441,7 +449,7 @@
                     ZIndex: =12
 
                 "BarcodeReader1 As 'Leitor de Código de Barras'":
-                    BorderFillColor: =RGBA(255, 191, 0, 1)
+                    BorderFillColor: =RGBA(99, 118, 250, 1)
                     BorderStyle: =BorderStyle.Dashed
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledContentColor: =RGBA(166, 166, 166, 1)
@@ -721,51 +729,31 @@
                     Y: =215
                     ZIndex: =10
 
-    CabecalhoProduto As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =7
-
-        HtmlText2_13 As htmlViewer:
-            Height: =88
-            HtmlText: |-
-                ="<div style='
-                width: 625px;
-                height: 70px;
-                background: #FF4E50;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                
-                
-                
-                box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
-                border-radius: 0px;
-                '>
-                </div>"
-            Width: =640
-            ZIndex: =1
-
-        RectQuickActionBar1_1 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =88
-            Width: =Parent.Width
-            ZIndex: =2
-
-        LblAppName1_1 As label:
-            Color: =RGBA(62, 74, 83, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Patrick Hand'
-            FontWeight: =FontWeight.Bold
-            Height: =44
-            Size: =35
-            Text: =" Produto"
-            Width: =301
-            X: =18
-            Y: =16
-            ZIndex: =3
+    TextInput3_2 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(51, 51, 51, 1)
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =91
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(0, 120, 212, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =21
+        Width: =640
+        ZIndex: =13
 
     ViewDetailProdutos As group:
         Height: =5
@@ -1902,4 +1890,21 @@
                     Wrap: =false
                     Y: =DataCardKey56.Y
                     ZIndex: =4
+
+    Label3_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(99, 118, 250, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Patrick Hand'
+        FontWeight: =FontWeight.Bold
+        Height: =82
+        Size: =45
+        Text: ="Produtos"
+        Width: =640
+        ZIndex: =14
 
