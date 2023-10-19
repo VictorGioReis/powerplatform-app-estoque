@@ -1,37 +1,6 @@
 CadastroProduto As screen:
+    Fill: =RGBA(217, 217, 217, 1)
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
-
-    HtmlText2_20 As htmlViewer:
-        Height: =88
-        HtmlText: |-
-            ="<div style='
-            width: 625px;
-            height: 70px;
-            background: #FF4E50;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            
-            
-            
-            box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
-            border-radius: 0px;
-            '>
-            </div>"
-        Width: =640
-        ZIndex: =1
-
-    LblAppName1_4 As label:
-        Color: =RGBA(62, 74, 83, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Patrick Hand'
-        FontWeight: =FontWeight.Bold
-        Height: =54
-        Size: =35
-        Text: ="Adicionar produto"
-        Width: =341
-        X: =21
-        Y: =17
-        ZIndex: =2
 
     "'frm-cadProduto' As form":
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -569,7 +538,7 @@ CadastroProduto As screen:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =RGBA(255, 200, 61, 1)
+                Color: =RGBA(99, 118, 250, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
@@ -588,7 +557,7 @@ CadastroProduto As screen:
             DataCardValue35_1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 BorderThickness: =2
-                Color: =RGBA(39, 113, 194, 1)
+                Color: =RGBA(184, 0, 0, 1)
                 Default: =If('frm-cadProduto'.Mode.New, Last(dtbProduto).Cod_Produto + 1, ThisItem.Cod_Produto)
                 DelayOutput: =true
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1341,4 +1310,47 @@ CadastroProduto As screen:
             X: =120
             Y: =1070
             ZIndex: =7
+
+    TextInput3_4 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(51, 51, 51, 1)
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =91
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(0, 120, 212, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =21
+        Width: =640
+        ZIndex: =9
+
+    Label3_3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(99, 118, 250, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Patrick Hand'
+        FontWeight: =FontWeight.Bold
+        Height: =82
+        Size: =45
+        Text: ="Cadastro de Produto"
+        Width: =640
+        ZIndex: =10
 
