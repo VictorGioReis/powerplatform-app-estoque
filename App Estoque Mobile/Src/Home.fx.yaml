@@ -870,9 +870,8 @@
                     ="<div style='
                     width: 625px;
                     height: 1060px;
-                    background: #FF4E50;  /* fallback for old browsers */
-                    background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-                    background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    background-color: #6376fa;
+                    
                     
                     box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
                     border-radius: 40px;
@@ -897,6 +896,7 @@
                 ZIndex: =5
 
             Label6_2 As label:
+                Align: =Align.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -906,11 +906,10 @@
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =41
+                Height: =57
                 Size: =28
                 Text: ="Meus Cards de Resumo"
-                Width: =532
-                X: =54
+                Width: =640
                 Y: =36
                 ZIndex: =6
 
@@ -932,6 +931,7 @@
                         border-radius: 15px;
                         '>
                         </div>"
+                    Visible: =false
                     Width: =588
                     X: =39
                     Y: =93
@@ -950,6 +950,7 @@
                     Height: =57
                     Size: =25
                     Text: ="Custo Total de estoque"
+                    Visible: =false
                     Width: =532
                     X: =53
                     Y: =93
@@ -965,6 +966,7 @@
                     Height: =2
                     HoverFill: =RGBA(0, 120, 212, 1)
                     PressedFill: =RGBA(0, 120, 212, 1)
+                    Visible: =false
                     Width: =520
                     X: =53
                     Y: =148
@@ -983,6 +985,7 @@
                     Image: ='esmolas-unscreen'
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
+                    Visible: =false
                     Width: =70
                     X: =69
                     Y: =180
@@ -1001,6 +1004,7 @@
                     Height: =37
                     Size: =17
                     Text: ="Saldo Total"
+                    Visible: =false
                     Width: =214
                     X: =174
                     Y: =180
@@ -1020,6 +1024,7 @@
                     Size: =25
                     Text: |-
                         ="R$:  "& Sum(dtbProduto,CustoTotal)
+                    Visible: =false
                     Width: =411
                     X: =174
                     Y: =217
@@ -1040,6 +1045,7 @@
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
+                    Visible: =false
                     X: =509
                     Y: =212
                     ZIndex: =10
@@ -1062,6 +1068,7 @@
                         border-radius: 15px;
                         '>
                         </div>"
+                    Visible: =false
                     Width: =588
                     X: =40
                     Y: =370
@@ -1080,6 +1087,7 @@
                     Height: =57
                     Size: =25
                     Text: ="Valor do Estoque para Venda"
+                    Visible: =false
                     Width: =532
                     X: =54
                     Y: =370
@@ -1095,6 +1103,7 @@
                     Height: =2
                     HoverFill: =RGBA(0, 120, 212, 1)
                     PressedFill: =RGBA(0, 120, 212, 1)
+                    Visible: =false
                     Width: =520
                     X: =54
                     Y: =425
@@ -1113,6 +1122,7 @@
                     Image: ='analise-unscreen'
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
+                    Visible: =false
                     Width: =70
                     X: =70
                     Y: =457
@@ -1131,6 +1141,7 @@
                     Height: =37
                     Size: =17
                     Text: ="Saldo Total"
+                    Visible: =false
                     Width: =214
                     X: =175
                     Y: =457
@@ -1150,6 +1161,7 @@
                     Size: =25
                     Text: |-
                         ="R$:  "& Sum(dtbProduto, Valor * Estoque)
+                    Visible: =false
                     Width: =411
                     X: =175
                     Y: =494
@@ -1169,31 +1181,16 @@
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
+                    Visible: =false
                     X: =510
                     Y: =489
                     ZIndex: =17
 
-            Rectangle4_5 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledFill: =RGBA(166, 166, 166, 1)
-                Fill: =RGBA(29, 29, 29, 1)
-                FocusedBorderThickness: =4
-                Height: =5
-                HoverFill: =RGBA(0, 120, 212, 1)
-                PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =531
-                X: =55
-                Y: =325
-                ZIndex: =19
-
     TextInput3 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
-        BorderThickness: =2
         Color: =RGBA(51, 51, 51, 1)
         Default: =""
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(99, 118, 250, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayMode: =DisplayMode.Disabled

@@ -359,7 +359,6 @@
     "Rectangle4_20": 171,
     "Rectangle4_3": 371,
     "Rectangle4_4": 379,
-    "Rectangle4_5": 376,
     "Rectangle4_7": 208,
     "Rectangle4_8": 340,
     "Rectangle6": 218,
@@ -444,7 +443,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/19/2023 21:34:59",
+  "HeaderLastSavedDateTimeUTC": "10/19/2023 21:38:21",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "d4242a16-0a34-475f-a165-dd77de37bd2c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/2ee5167599bb4f96ac8a4f126c3732e7\""
@@ -1170,7 +1169,6 @@
     "Rectangle4_20": {},
     "Rectangle4_3": {},
     "Rectangle4_4": {},
-    "Rectangle4_5": {},
     "Rectangle4_7": {},
     "Rectangle4_8": {},
     "Rectangle6": {},
@@ -1832,7 +1830,6 @@
     "Rectangle4_20": 363,
     "Rectangle4_3": 61,
     "Rectangle4_4": 70,
-    "Rectangle4_5": 66,
     "Rectangle4_7": 163,
     "Rectangle4_8": 31,
     "Rectangle6": 173,
