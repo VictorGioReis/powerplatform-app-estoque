@@ -175,7 +175,7 @@
 
                 icon_classificar As icon.Camera:
                     BorderColor: =RGBA(166, 166, 166, 1)
-                    Color: =RGBA(0, 120, 212, 1)
+                    Color: =RGBA(217, 217, 217, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(220, 220, 220, 1)
                     DisabledFill: =RGBA(0, 0, 0, 0)
@@ -326,7 +326,7 @@
                     Height: =45
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: ='pasta (1)'
+                    Image: ='adicionar-pasta-unscreen'
                     OnSelect: =Navigate(CadastroProduto,ScreenTransition.Cover)
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
