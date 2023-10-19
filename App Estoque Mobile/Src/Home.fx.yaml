@@ -454,12 +454,12 @@
                 ZIndex: =26
 
             HtmlText2_29 As htmlViewer:
-                Height: =543
+                Height: =781
                 HtmlText: |-
                     ="<center>
                     <div style='
                     width: 95%;
-                    height: 500px;
+                    height: 750px;
                     background-color: #8EC5FC;
                     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
                     
@@ -491,15 +491,15 @@
             "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(166, 166, 166, 1)
                 DelayItemLoading: =true
-                Height: =471
+                Height: =352
                 Items: =dtbProduto
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
-                TemplateSize: =448
+                TemplateSize: =352
                 Width: =549
                 X: =50
-                Y: =610
+                Y: =928
                 ZIndex: =29
 
                 Image7 As image:
@@ -509,7 +509,7 @@
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =4
-                    Height: =72
+                    Height: =168
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Image: =ThisItem.Imagem
@@ -520,72 +520,75 @@
                     RadiusBottomRight: =8
                     RadiusTopLeft: =8
                     RadiusTopRight: =8
-                    Width: =72
-                    X: =16
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    Width: =204
+                    X: =164
+                    Y: =84
                     ZIndex: =1
 
                 Title2 As label:
+                    Align: =Align.Center
                     Color: =RGBA(50, 49, 48, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =Self.Size * 1.8
+                    Height: =117
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Text: =ThisItem.Título
+                    Size: =20
+                    Text: =ThisItem.Descricao
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Parent.TemplateWidth - 173
-                    X: =103
-                    Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
+                    X: =78
+                    Y: =273
                     ZIndex: =2
 
                 Subtitle2 As label:
+                    Align: =Align.Center
                     Color: =RGBA(51, 51, 51, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =Self.Size * 1.8
+                    Height: =54
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =12
-                    Text: =ThisItem.Cod_Produto
+                    Size: =20
+                    Text: |-
+                        ="Id Produto:   " & ThisItem.Cod_Produto
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =Title2.Width
-                    X: =Title2.X
-                    Y: =Title2.Y + Title2.Height
+                    Width: =500
+                    X: =16
+                    Y: =16
                     ZIndex: =3
-
-                NextArrow1 As icon.ChevronRight:
-                    AccessibleLabel: =Self.Tooltip
-                    Color: =RGBA(166, 166, 166, 1)
-                    Height: =50
-                    Icon: =Icon.ChevronRight
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =16
-                    PaddingLeft: =16
-                    PaddingRight: =16
-                    PaddingTop: =16
-                    Tooltip: ="Exibir detalhes do item"
-                    Width: =50
-                    X: =Parent.TemplateWidth - Self.Width - 12
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =4
 
                 Rectangle9 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     Fill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    Height: =
+                    Height: =446
                     OnSelect: =Select(Parent)
                     Visible: =ThisItem.IsSelected
                     Width: =4
                     ZIndex: =6
+
+            HtmlText2_2 As htmlViewer:
+                Height: =390
+                HtmlText: |-
+                    ="<center>
+                    <div style='
+                    width: 550px;
+                    height: 350px;
+                    background: #f4f4f4;
+                    border-radius: 15px;
+                    '>
+                    </div>"
+                Width: =640
+                Y: =909
+                ZIndex: =30
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
