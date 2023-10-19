@@ -50,7 +50,7 @@
                     Width: =577
                     X: =26
                     Y: =14
-                    ZIndex: =2
+                    ZIndex: =1
 
                 Image1_1 As image:
                     BorderColor: =RGBA(99, 118, 250, 1)
@@ -72,7 +72,7 @@
                     Width: =180
                     X: =48
                     Y: =45
-                    ZIndex: =3
+                    ZIndex: =2
 
                 Label2_3 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -90,7 +90,7 @@
                     Width: =449
                     X: =124
                     Y: =240
-                    ZIndex: =4
+                    ZIndex: =3
 
                 Label2_4 As label:
                     Align: =Align.Center
@@ -109,7 +109,7 @@
                     Width: =404
                     X: =199
                     Y: =30
-                    ZIndex: =5
+                    ZIndex: =4
 
                 Label2_5 As label:
                     Align: =Align.Center
@@ -128,7 +128,7 @@
                     Width: =426
                     X: =188
                     Y: =128
-                    ZIndex: =6
+                    ZIndex: =5
 
                 Image2_2 As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -146,7 +146,7 @@
                     Width: =80
                     X: =48
                     Y: =237
-                    ZIndex: =7
+                    ZIndex: =6
 
                 Image2_3 As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -162,7 +162,7 @@
                     PressedFill: =RGBA(0, 0, 0, 0)
                     X: =228
                     Y: =95
-                    ZIndex: =8
+                    ZIndex: =7
 
                 Rectangle2_1 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -178,7 +178,7 @@
                     Width: =470
                     X: =79
                     Y: =225
-                    ZIndex: =9
+                    ZIndex: =8
 
             separator As rectangle:
                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -194,7 +194,67 @@
                 Width: =565
                 X: =31
                 Y: =418
+                ZIndex: =20
+
+            "'title-menu' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(82, 82, 82, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Patrick Hand'
+                FontWeight: =FontWeight.Semibold
+                Height: =61
+                Size: =35
+                Text: ="Pesquisa rápida"
+                Width: =430
+                X: =94
+                Y: =480
+                ZIndex: =21
+
+            "'icon-menu' As image":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =70
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='pesquisar-unscreen'
+                PaddingBottom: =5
+                PaddingLeft: =5
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =70
+                X: =30
+                Y: =476
                 ZIndex: =22
+
+            HtmlText2_29 As htmlViewer:
+                Height: =781
+                HtmlText: |-
+                    ="<center>
+                    <div style='
+                    width: 95%;
+                    height: 750px;
+                    background-color: #8EC5FC;
+                    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+                    
+                    
+                    
+                    box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
+                    border-radius: 40px;
+                    '>
+                    </div>"
+                Width: =640
+                Y: =571
+                ZIndex: =23
 
             ResumoSaldos As group:
                 Height: =5
@@ -218,7 +278,7 @@
                     Width: =588
                     X: =31
                     Y: =418
-                    ZIndex: =11
+                    ZIndex: =9
 
                 Label6 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -237,7 +297,7 @@
                     Width: =532
                     X: =59
                     Y: =433
-                    ZIndex: =12
+                    ZIndex: =10
 
                 Label8 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -256,7 +316,7 @@
                     Width: =214
                     X: =75
                     Y: =516
-                    ZIndex: =13
+                    ZIndex: =11
 
                 lblSaldoPositivo As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -276,7 +336,7 @@
                     Width: =449
                     X: =75
                     Y: =553
-                    ZIndex: =14
+                    ZIndex: =12
 
                 Label8_1 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -295,7 +355,7 @@
                     Width: =214
                     X: =75
                     Y: =610
-                    ZIndex: =15
+                    ZIndex: =13
 
                 lblSaldoNegativo As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -315,7 +375,7 @@
                     Width: =449
                     X: =75
                     Y: =647
-                    ZIndex: =16
+                    ZIndex: =14
 
                 Rectangle4_1 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -331,7 +391,7 @@
                     Width: =520
                     X: =48
                     Y: =488
-                    ZIndex: =17
+                    ZIndex: =15
 
                 Label6_3 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -350,7 +410,7 @@
                     Width: =449
                     X: =75
                     Y: =553
-                    ZIndex: =18
+                    ZIndex: =16
 
                 Label6_4 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -369,7 +429,7 @@
                     Width: =449
                     X: =75
                     Y: =647
-                    ZIndex: =19
+                    ZIndex: =17
 
                 bloqSaldo As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -390,7 +450,7 @@
                     Width: =40
                     X: =457
                     Y: =501
-                    ZIndex: =20
+                    ZIndex: =18
 
                 verSaldo As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -411,67 +471,7 @@
                     Width: =40
                     X: =524
                     Y: =500
-                    ZIndex: =21
-
-            "'title-menu' As label":
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(82, 82, 82, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Patrick Hand'
-                FontWeight: =FontWeight.Semibold
-                Height: =61
-                Size: =35
-                Text: ="Pesquisa rápida"
-                Width: =430
-                X: =94
-                Y: =480
-                ZIndex: =25
-
-            "'icon-menu' As image":
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
-                Height: =70
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                Image: ='pesquisar-unscreen'
-                PaddingBottom: =5
-                PaddingLeft: =5
-                PaddingRight: =5
-                PaddingTop: =5
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =70
-                X: =30
-                Y: =476
-                ZIndex: =26
-
-            HtmlText2_29 As htmlViewer:
-                Height: =781
-                HtmlText: |-
-                    ="<center>
-                    <div style='
-                    width: 95%;
-                    height: 750px;
-                    background-color: #8EC5FC;
-                    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-                    
-                    
-                    
-                    box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
-                    border-radius: 40px;
-                    '>
-                    </div>"
-                Width: =640
-                Y: =571
-                ZIndex: =27
+                    ZIndex: =19
 
             Rectangle4_8 As rectangle:
                 BorderColor: =RGBA(255, 255, 255, 1)
@@ -486,7 +486,22 @@
                 Width: =100
                 X: =263
                 Y: =587
-                ZIndex: =28
+                ZIndex: =24
+
+            HtmlText2_2 As htmlViewer:
+                Height: =390
+                HtmlText: |-
+                    ="<center>
+                    <div style='
+                    width: 550px;
+                    height: 370px;
+                    background: #f4f4f4;
+                    border-radius: 15px;
+                    '>
+                    </div>"
+                Width: =640
+                Y: =909
+                ZIndex: =25
 
             "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(166, 166, 166, 1)
@@ -500,7 +515,7 @@
                 Width: =549
                 X: =50
                 Y: =928
-                ZIndex: =29
+                ZIndex: =26
 
                 Image7 As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
@@ -575,20 +590,24 @@
                     Width: =4
                     ZIndex: =6
 
-            HtmlText2_2 As htmlViewer:
-                Height: =390
-                HtmlText: |-
-                    ="<center>
-                    <div style='
-                    width: 550px;
-                    height: 350px;
-                    background: #f4f4f4;
-                    border-radius: 15px;
-                    '>
-                    </div>"
-                Width: =640
-                Y: =909
-                ZIndex: =30
+                Icon5 As icon.ZoomIn:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    Color: =RGBA(99, 118, 250, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =RGBA(217, 217, 217, 1)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.ZoomIn
+                    OnSelect: =Select(Parent)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    X: =473
+                    Y: =11
+                    ZIndex: =7
 
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
