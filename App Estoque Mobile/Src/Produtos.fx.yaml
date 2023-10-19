@@ -7,14 +7,14 @@
         Fill: =RGBA(0, 0, 0, 0)
         Height: =88
         Width: =Parent.Width
-        ZIndex: =2
+        ZIndex: =1
 
     Canvas1_1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
         Y: =RectQuickActionBar1_1.Y + RectQuickActionBar1_1.Height
-        ZIndex: =5
+        ZIndex: =2
 
         DataCard1_1 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -553,7 +553,7 @@
                         width: 100%;
                         height: 215px;
                         
-                        background: #999999;  
+                        background: #d9d9d9;  
                         
                         box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
                         border-radius: 40px;
@@ -653,7 +653,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
+                    Color: =RGBA(99, 118, 250, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -662,8 +662,7 @@
                     Height: =44
                     OnSelect: =Select(Parent)
                     Size: =25
-                    Text: |-
-                        = "💵 R$: " & ThisItem.Categoria
+                    Text: = "📑 " & ThisItem.Categoria
                     Width: =342
                     X: =22
                     Y: =135
@@ -751,7 +750,69 @@
         RadiusTopRight: =0
         Size: =21
         Width: =640
-        ZIndex: =13
+        ZIndex: =3
+
+    Label3_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(99, 118, 250, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Patrick Hand'
+        FontWeight: =FontWeight.Bold
+        Height: =82
+        Size: =45
+        Text: ="Produtos"
+        Width: =640
+        ZIndex: =4
+
+    TextInput3_3 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(51, 51, 51, 1)
+        DisplayMode: =DisplayMode.Disabled
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =91
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(0, 120, 212, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =21
+        Width: =640
+        Y: =20
+        ZIndex: =5
+
+    Label3_2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(99, 118, 250, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Patrick Hand'
+        FontWeight: =FontWeight.Bold
+        Height: =82
+        Size: =45
+        Text: ="Home"
+        Width: =640
+        Y: =20
+        ZIndex: =6
 
     ViewDetailProdutos As group:
         Height: =5
@@ -780,7 +841,8 @@
                 ="<div style='
                 width: 600px;
                 height: 1090px;
-                background-image: linear-gradient( 179deg,  rgba(255,121,16,1) 9.2% ,  rgba(0,0,0,1) 103.9% );
+                background-color: #9dafff;
+                background-image: linear-gradient(62deg, #9dafff 0%, #6376fa 89%);
                 
                 box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
                 border-radius: 40px;
@@ -813,7 +875,7 @@
             Width: =300
             X: =180
             Y: =10
-            ZIndex: =10
+            ZIndex: =9
 
         Image12_1 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -822,9 +884,10 @@
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
+            Height: =65
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =sair
+            Image: ='xmark-retangulo'
             OnSelect: |-
                 =UpdateContext({varViewDetailProduto:false})
             PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -832,8 +895,8 @@
             Tooltip: ="Fechar"
             Visible: =varViewDetailProduto
             X: =280
-            Y: =1010
-            ZIndex: =11
+            Y: =1071
+            ZIndex: =10
 
         frmViewDetailProdutos As form:
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -845,7 +908,7 @@
             Width: =586
             X: =32
             Y: =318
-            ZIndex: =12
+            ZIndex: =11
 
             Categoria_DataCard6 As typedDataCard.textualEditCard:
                 BorderColor: =RGBA(166, 166, 166, 1)
@@ -869,7 +932,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -985,7 +1048,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1100,7 +1163,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1216,7 +1279,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1332,7 +1395,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1448,7 +1511,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1564,7 +1627,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1679,7 +1742,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1795,7 +1858,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1888,21 +1951,4 @@
                     Wrap: =false
                     Y: =DataCardKey56.Y
                     ZIndex: =4
-
-    Label3_1 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(99, 118, 250, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Patrick Hand'
-        FontWeight: =FontWeight.Bold
-        Height: =82
-        Size: =45
-        Text: ="Produtos"
-        Width: =640
-        ZIndex: =14
 
