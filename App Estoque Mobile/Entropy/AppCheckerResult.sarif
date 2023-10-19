@@ -3214,6 +3214,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.vreis-logo"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.vreis-logo",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "vreis-logo",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],

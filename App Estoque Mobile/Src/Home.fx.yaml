@@ -41,9 +41,7 @@
                         ="<div style='
                         width: 550px;
                         height: 350px;
-                        background: #232526;  /* fallback for old browsers */
-                        background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-                        background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                        background: #f4f4f4;
                         
                         box-shadow: rgba(100, 100, 100, 0.45) 4px 4px 4px 4px;
                         border-radius: 15px;
@@ -63,7 +61,7 @@
                     Height: =175
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: ='vreis-logo'
+                    Image: =User().Image
                     PaddingBottom: =2
                     PaddingLeft: =2
                     PaddingRight: =2
