@@ -503,7 +503,7 @@
                 Y: =909
                 ZIndex: =25
 
-            "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            "'glr-PesquisaProd-flash' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 BorderColor: =RGBA(166, 166, 166, 1)
                 DelayItemLoading: =true
                 Height: =347
@@ -1214,7 +1214,7 @@
         Y: =1045
         ZIndex: =3
 
-    "Gallery1 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
+    "'glr-menu' As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
         Height: =91
@@ -1365,7 +1365,7 @@
             Height: =300
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Image: ='glr-ProdutosCadastrados'.Selected.Imagem
+            Image: ='glr-PesquisaProd-flash'.Selected.Imagem
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             RadiusBottomLeft: =150
@@ -1389,7 +1389,7 @@
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =sair
             OnSelect: |-
-                =UpdateContext({varViewDetailProduto:false})
+                =UpdateContext({varViewDetailProduto1:false})
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Tooltip: ="Fechar"
