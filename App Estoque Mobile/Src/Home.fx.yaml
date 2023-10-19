@@ -944,7 +944,7 @@
 
                 Icon1_1 As icon.ChevronRight:
                     BorderColor: =RGBA(166, 166, 166, 1)
-                    Color: =RGBA(164, 164, 164, 1)
+                    Color: =RGBA(99, 118, 250, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(220, 220, 220, 1)
                     DisabledFill: =RGBA(0, 0, 0, 0)
@@ -1012,7 +1012,7 @@
         FocusedBorderThickness: =4
         Height: =70
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(217, 217, 217, 1)
         Image: =categorizacao
         PaddingBottom: =5
         PaddingLeft: =5
@@ -1040,7 +1040,7 @@
         FocusedBorderThickness: =4
         Height: =70
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(217, 217, 217, 1)
         Image: ='caixa-aberta'
         PaddingBottom: =10
         PaddingLeft: =10
@@ -1068,7 +1068,7 @@
         FocusedBorderThickness: =4
         Height: =70
         HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(217, 217, 217, 1)
         Image: ='caixa-de-entrada'
         PaddingBottom: =10
         PaddingLeft: =10
