@@ -553,7 +553,7 @@
                         width: 100%;
                         height: 215px;
                         
-                        background: #333333;  
+                        background: #999999;  
                         
                         box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
                         border-radius: 40px;
@@ -577,7 +577,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(99, 118, 250, 1)
+                    Color: =RGBA(255, 0, 0, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -597,7 +597,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(217, 217, 217, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -653,7 +653,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(54, 176, 75, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -663,7 +663,7 @@
                     OnSelect: =Select(Parent)
                     Size: =25
                     Text: |-
-                        = "💵 R$: " & ThisItem.Valor
+                        = "💵 R$: " & ThisItem.Categoria
                     Width: =342
                     X: =22
                     Y: =135
@@ -673,7 +673,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(99, 118, 250, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -691,7 +691,7 @@
 
                 Icon3 As icon.ZoomIn:
                     BorderColor: =RGBA(166, 166, 166, 1)
-                    Color: =RGBA(0, 120, 212, 1)
+                    Color: =RGBA(99, 118, 250, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(220, 220, 220, 1)
                     DisabledFill: =RGBA(0, 0, 0, 0)
