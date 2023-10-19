@@ -1013,11 +1013,11 @@
         Height: =70
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Image: ='caixa-aberta'
-        PaddingBottom: =10
-        PaddingLeft: =10
-        PaddingRight: =10
-        PaddingTop: =10
+        Image: =categorizacao
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         RadiusBottomLeft: =50
@@ -1025,7 +1025,7 @@
         RadiusTopLeft: =50
         RadiusTopRight: =50
         TabIndex: =1
-        Tooltip: ="Produtos"
+        Tooltip: ="Categoria"
         Width: =70
         X: =142
         Y: =1066
@@ -1069,7 +1069,7 @@
         Height: =70
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Image: ='caixa-aberta'
+        Image: ='caixa-de-entrada'
         PaddingBottom: =10
         PaddingLeft: =10
         PaddingRight: =10
@@ -1081,7 +1081,7 @@
         RadiusTopLeft: =50
         RadiusTopRight: =50
         TabIndex: =1
-        Tooltip: ="Produtos"
+        Tooltip: ="Entradas"
         Width: =70
         X: =431
         Y: =1066
