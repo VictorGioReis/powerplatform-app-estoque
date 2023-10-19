@@ -444,7 +444,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/19/2023 20:50:20",
+  "HeaderLastSavedDateTimeUTC": "10/19/2023 20:54:47",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "d4242a16-0a34-475f-a165-dd77de37bd2c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/2ee5167599bb4f96ac8a4f126c3732e7\""
@@ -494,6 +494,7 @@
     "varredura-qr": "7493c768-c06c-4413-8e4e-e7b7bed25a60.png",
     "varredura-qr_1": "3f3691fd-6c59-4f60-aef0-bea88adb407f.png",
     "vreis-logo": "e3c8dfb8-79dc-4773-a74c-5e7e0135a6da.png",
+    "xmark-retangulo": "5b7ad7f3-4813-43ca-9b14-30c6fe185750.png",
     "zyro-image": "73af4478-c950-4ba7-b048-1def3b354c15.png"
   },
   "LocalResourceRootPaths": {
@@ -540,6 +541,7 @@
     "varredura-qr": "https://docserverpwaprodsbr.blob.core.windows.net/4a49b52c-ce2e-419c-961e-866657a65637-1/resource/Assets0Images07493c768-c06c-4413-8e4e-e7b7bed25a60.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-19T18%3A44%3A15Z&ske=2023-10-20T18%3A59%3A15Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-10-20T18%3A59%3A15Z&sr=b&sp=r&sig=VYHslhJrovSZYRXOoA6HYM9Ugqx6aLvusTeLvEvAeN4%3D",
     "varredura-qr_1": "https://docserverpwaprodsbr.blob.core.windows.net/4a49b52c-ce2e-419c-961e-866657a65637-1/resource/Assets0Images03f3691fd-6c59-4f60-aef0-bea88adb407f.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-19T18%3A44%3A15Z&ske=2023-10-20T18%3A59%3A15Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-10-20T18%3A59%3A15Z&sr=b&sp=r&sig=lgswJ5ZYJyv6WWge67Y7EOfjvxBxobj4nNQmVROoe%2Fw%3D",
     "vreis-logo": "https://docserverpwaprodsbr.blob.core.windows.net/4a49b52c-ce2e-419c-961e-866657a65637-1/resource/Assets0Images0e3c8dfb8-79dc-4773-a74c-5e7e0135a6da.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-19T18%3A44%3A15Z&ske=2023-10-20T18%3A59%3A15Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-10-20T18%3A59%3A15Z&sr=b&sp=r&sig=wi3TYf5u1pgdMPH1gLjgk964EOJr3vVBN2tS1xGlmMg%3D",
+    "xmark-retangulo": "https://docserverpwaprodsbr.blob.core.windows.net/4a49b52c-ce2e-419c-961e-866657a65637-1/resource/028e319d-eecc-46e3-8641-5fb13f52ad4c.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-19T20%3A54%3A26Z&ske=2023-10-20T21%3A09%3A26Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-10-20T21%3A09%3A26Z&sr=b&sp=r&sig=872aSyyINIAKEP8DGisq2sOEQSVVVSHGKk3ZUwpYjBM%3D",
     "zyro-image": "https://docserverpwaprodsbr.blob.core.windows.net/4a49b52c-ce2e-419c-961e-866657a65637-1/resource/Assets0Images073af4478-c950-4ba7-b048-1def3b354c15.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-10-19T18%3A44%3A15Z&ske=2023-10-20T18%3A59%3A15Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-10-20T18%3A59%3A15Z&sr=b&sp=r&sig=1o9jf8JkycwAeKwD6i2hT%2B24TNsy4JpNnBi1EyMXMpc%3D"
   },
   "OldLogoFileName": "xhoui2pw.jpg",
@@ -1958,6 +1960,7 @@
     "Image-varredura-qr": 19,
     "Image-varredura-qr_1": 22,
     "Image-vreis-logo": 34,
+    "Image-xmark-retangulo": 45,
     "Image-zyro-image": 1
   },
   "RuleScreenIdWithoutScreen": {},

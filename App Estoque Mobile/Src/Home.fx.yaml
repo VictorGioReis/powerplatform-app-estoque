@@ -1343,7 +1343,8 @@
                 ="<div style='
                 width: 600px;
                 height: 1090px;
-                background-image: linear-gradient( 179deg,  rgba(255,121,16,1) 9.2% ,  rgba(0,0,0,1) 103.9% );
+                background-color: #8EC5FC;
+                background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
                 
                 box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
                 border-radius: 40px;
@@ -1387,7 +1388,7 @@
             FocusedBorderThickness: =4
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =sair
+            Image: ='xmark-retangulo'
             OnSelect: |-
                 =UpdateContext({varViewDetailProduto1:false})
             PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -1395,7 +1396,7 @@
             Tooltip: ="Fechar"
             Visible: =varViewDetailProduto1
             X: =280
-            Y: =1010
+            Y: =1036
             ZIndex: =10
 
         frmViewDetailProdutos_1 As form:
@@ -1432,7 +1433,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1548,7 +1549,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1663,7 +1664,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1779,7 +1780,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1895,7 +1896,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -2011,7 +2012,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -2127,7 +2128,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -2242,7 +2243,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -2358,7 +2359,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(255, 191, 0, 1)
+                    Color: =RGBA(51, 51, 51, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
