@@ -38,7 +38,8 @@
                 HtmlText2_1 As htmlViewer:
                     Height: =390
                     HtmlText: |-
-                        ="<div style='
+                        ="<center>
+                        <div style='
                         width: 550px;
                         height: 350px;
                         background: #f4f4f4;
@@ -47,8 +48,7 @@
                         border-radius: 15px;
                         '>
                         </div>"
-                    Width: =577
-                    X: =26
+                    Width: =640
                     Y: =14
                     ZIndex: =1
 
@@ -88,7 +88,7 @@
                     Size: =17
                     Text: ="VictorReis@email.onmicrosoft.com"
                     Width: =449
-                    X: =124
+                    X: =144
                     Y: =240
                     ZIndex: =3
 
@@ -144,7 +144,7 @@
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Width: =80
-                    X: =48
+                    X: =68
                     Y: =237
                     ZIndex: =6
 
@@ -1293,8 +1293,8 @@
         PressedFill: =RGBA(255, 255, 255, 1)
         RadiusBottomLeft: =15
         RadiusBottomRight: =15
-        RadiusTopLeft: =15
-        RadiusTopRight: =15
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =21
         Width: =640
         ZIndex: =5
