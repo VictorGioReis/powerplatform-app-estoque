@@ -1,24 +1,24 @@
 "Home As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    Fill: =RGBA(31, 31, 31, 1)
-    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
+    Fill: =RGBA(217, 217, 217, 1)
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     HtmlText2_2 As htmlViewer:
+        AutoHeight: =true
         Height: =88
         HtmlText: |-
             ="<div style='
             width: 625px;
             height: 70px;
-            background: #FF4E50;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #FBFBFC;
             
             
             
-            box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
-            border-radius: 0px;
+            
+            border-radius: 15px;
             '>
             </div>"
         Width: =640
+        Y: =1048
         ZIndex: =1
 
     RectQuickActionBar1 As rectangle:
@@ -26,42 +26,8 @@
         Fill: =RGBA(0, 0, 0, 0)
         Height: =88
         Width: =Parent.Width
+        Y: =1048
         ZIndex: =2
-
-    LblAppName1 As label:
-        Align: =Align.Center
-        Color: =RGBA(62, 74, 83, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Patrick Hand'
-        FontWeight: =FontWeight.Bold
-        Height: =65
-        Size: =35
-        Text: ="Home"
-        Width: =173
-        Y: =5
-        ZIndex: =3
-
-    "'img-User' As image":
-        BorderColor: =RGBA(255, 191, 0, 1)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =65
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Image: =User().Image
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        RadiusBottomLeft: =150
-        RadiusBottomRight: =150
-        RadiusTopLeft: =150
-        RadiusTopRight: =150
-        Width: =65
-        X: =553
-        Y: =5
-        ZIndex: =14
 
     Canvas1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -233,8 +199,8 @@
                     Fill: =RGBA(255, 191, 0, 1)
                     FocusedBorderThickness: =4
                     Height: =2
-                    HoverFill: =RGBA(255, 200, 61, 1)
-                    PressedFill: =RGBA(255, 200, 61, 1)
+                    HoverFill: =RGBA(0, 120, 212, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
                     Width: =470
                     X: =79
                     Y: =225
@@ -248,15 +214,15 @@
                 Fill: =RGBA(255, 191, 0, 1)
                 FocusedBorderThickness: =4
                 Height: =5
-                HoverFill: =RGBA(255, 200, 61, 1)
-                PressedFill: =RGBA(255, 200, 61, 1)
+                HoverFill: =RGBA(0, 120, 212, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =565
                 X: =31
                 Y: =418
                 ZIndex: =22
 
             glrMenu1 As gallery.galleryVertical:
-                BorderColor: =RGBA(109, 109, 109, 1)
+                BorderColor: =RGBA(166, 166, 166, 1)
                 Height: =770
                 Items: |-
                     =Table({Id:1, Tela: Produtos, Label: "Produtos", Icon: 'caixa-aberta-cheia (2)'},{Id:2, Tela: Blank(), Label: "Estoque", Icon: 'armazem-alt'},{Id:3, Tela:Blank(), Label: "Movimentações", Icon: caixas})
@@ -476,8 +442,8 @@
                     Fill: =RGBA(51, 196, 75, 1)
                     FocusedBorderThickness: =4
                     Height: =2
-                    HoverFill: =RGBA(255, 200, 61, 1)
-                    PressedFill: =RGBA(255, 200, 61, 1)
+                    HoverFill: =RGBA(0, 120, 212, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
                     Visible: =false
                     Width: =520
                     X: =48
@@ -565,7 +531,7 @@
                     ZIndex: =21
 
             glrMenu2 As gallery.galleryVertical:
-                BorderColor: =RGBA(109, 109, 109, 1)
+                BorderColor: =RGBA(166, 166, 166, 1)
                 Height: =770
                 Items: |-
                     =Table({Id: 4, Tela: Vendas, Label: "Vendas", Icon: 'usuarios-alt'},{Id:5, Tela: Blank(), Label: "Entradas", Icon: 'dolar-funil'},{Id:6, Tela: Blank(), Label: "Caixa", Icon: 'banco (3)'})
@@ -730,8 +696,8 @@
                 Fill: =RGBA(211, 211, 211, 1)
                 FocusedBorderThickness: =4
                 Height: =10
-                HoverFill: =RGBA(255, 200, 61, 1)
-                PressedFill: =RGBA(255, 200, 61, 1)
+                HoverFill: =RGBA(0, 120, 212, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =100
                 X: =263
                 Y: =15
@@ -804,8 +770,8 @@
                     Fill: =RGBA(29, 29, 29, 1)
                     FocusedBorderThickness: =4
                     Height: =2
-                    HoverFill: =RGBA(255, 200, 61, 1)
-                    PressedFill: =RGBA(255, 200, 61, 1)
+                    HoverFill: =RGBA(0, 120, 212, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
                     Width: =520
                     X: =53
                     Y: =148
@@ -867,19 +833,19 @@
                     ZIndex: =9
 
                 Icon1 As icon.ChevronRight:
-                    BorderColor: =RGBA(109, 109, 109, 1)
+                    BorderColor: =RGBA(166, 166, 166, 1)
                     Color: =RGBA(164, 164, 164, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(220, 220, 220, 1)
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =4
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                    HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.NextArrow
                     OnSelect: =
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                    PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     X: =509
                     Y: =212
@@ -934,8 +900,8 @@
                     Fill: =RGBA(29, 29, 29, 1)
                     FocusedBorderThickness: =4
                     Height: =2
-                    HoverFill: =RGBA(255, 200, 61, 1)
-                    PressedFill: =RGBA(255, 200, 61, 1)
+                    HoverFill: =RGBA(0, 120, 212, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
                     Width: =520
                     X: =54
                     Y: =425
@@ -997,18 +963,18 @@
                     ZIndex: =16
 
                 Icon1_1 As icon.ChevronRight:
-                    BorderColor: =RGBA(109, 109, 109, 1)
+                    BorderColor: =RGBA(166, 166, 166, 1)
                     Color: =RGBA(164, 164, 164, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(220, 220, 220, 1)
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =4
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                    HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.NextArrow
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                    PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     X: =510
                     Y: =489
@@ -1022,8 +988,8 @@
                 Fill: =RGBA(29, 29, 29, 1)
                 FocusedBorderThickness: =4
                 Height: =5
-                HoverFill: =RGBA(255, 200, 61, 1)
-                PressedFill: =RGBA(255, 200, 61, 1)
+                HoverFill: =RGBA(0, 120, 212, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =531
                 X: =55
                 Y: =325

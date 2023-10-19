@@ -1,6 +1,5 @@
 "Vendas As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    Fill: =RGBA(31, 31, 31, 1)
-    LoadingSpinnerColor: =RGBA(255, 200, 61, 1)
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     Canvas1_2 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -41,16 +40,16 @@
                 Fill: =RGBA(255, 191, 0, 1)
                 FocusedBorderThickness: =4
                 Height: =5
-                HoverFill: =RGBA(255, 200, 61, 1)
-                PressedFill: =RGBA(255, 200, 61, 1)
+                HoverFill: =RGBA(0, 120, 212, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =565
                 X: =30
                 Y: =376
                 ZIndex: =7
 
             icon_retornar_1 As icon.Camera:
-                BorderColor: =RGBA(109, 109, 109, 1)
-                Color: =RGBA(255, 200, 61, 1)
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =RGBA(0, 120, 212, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(220, 220, 220, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
@@ -62,7 +61,7 @@
                 Icon: =Icon.ArrowLeft
                 OnSelect: =Navigate(Home,ScreenTransition.UnCoverRight)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =60
                 X: =535
@@ -97,8 +96,8 @@
                 Fill: =RGBA(224, 228, 230, 1)
                 FocusedBorderThickness: =4
                 Height: =10
-                HoverFill: =RGBA(255, 200, 61, 1)
-                PressedFill: =RGBA(255, 200, 61, 1)
+                HoverFill: =RGBA(0, 120, 212, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =100
                 X: =263
                 Y: =417
@@ -172,7 +171,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     Fill: =RGBA(218, 228, 235, 0.25)
-                    FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
                     Height: =70
@@ -182,7 +181,7 @@
                     OnSelect: |-
                         =//ResetForm('frm-cadProduto');;NewForm('frm-cadProduto');;
                         Navigate('Registro de Venda',ScreenTransition.Cover)
-                    PressedBorderColor: =ColorFade(RGBA(255, 200, 61, 1), 50%)
+                    PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
                     PressedColor: =RGBA(224, 228, 230, 1)
                     PressedFill: =RGBA(255, 255, 0, 0.67)
                     RadiusBottomLeft: =0
@@ -264,8 +263,8 @@
                     Fill: =RGBA(29, 29, 29, 1)
                     FocusedBorderThickness: =4
                     Height: =2
-                    HoverFill: =RGBA(255, 200, 61, 1)
-                    PressedFill: =RGBA(255, 200, 61, 1)
+                    HoverFill: =RGBA(0, 120, 212, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
                     Width: =520
                     X: =44
                     Y: =515
@@ -327,19 +326,19 @@
                     ZIndex: =28
 
                 Icon1_2 As icon.ChevronRight:
-                    BorderColor: =RGBA(109, 109, 109, 1)
+                    BorderColor: =RGBA(166, 166, 166, 1)
                     Color: =RGBA(164, 164, 164, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(220, 220, 220, 1)
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =4
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                    HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.NextArrow
                     OnSelect: =
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                    PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     X: =500
                     Y: =579
@@ -394,8 +393,8 @@
                     Fill: =RGBA(29, 29, 29, 1)
                     FocusedBorderThickness: =4
                     Height: =2
-                    HoverFill: =RGBA(255, 200, 61, 1)
-                    PressedFill: =RGBA(255, 200, 61, 1)
+                    HoverFill: =RGBA(0, 120, 212, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
                     Width: =520
                     X: =44
                     Y: =757
@@ -457,19 +456,19 @@
                     ZIndex: =35
 
                 Icon1_3 As icon.ChevronRight:
-                    BorderColor: =RGBA(109, 109, 109, 1)
+                    BorderColor: =RGBA(166, 166, 166, 1)
                     Color: =RGBA(164, 164, 164, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(220, 220, 220, 1)
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =4
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                    HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.NextArrow
                     OnSelect: =
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                    PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     X: =500
                     Y: =821
@@ -524,8 +523,8 @@
                     Fill: =RGBA(29, 29, 29, 1)
                     FocusedBorderThickness: =4
                     Height: =2
-                    HoverFill: =RGBA(255, 200, 61, 1)
-                    PressedFill: =RGBA(255, 200, 61, 1)
+                    HoverFill: =RGBA(0, 120, 212, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
                     Width: =520
                     X: =44
                     Y: =999
@@ -586,19 +585,19 @@
                     ZIndex: =42
 
                 Icon1_4 As icon.ChevronRight:
-                    BorderColor: =RGBA(109, 109, 109, 1)
+                    BorderColor: =RGBA(166, 166, 166, 1)
                     Color: =RGBA(164, 164, 164, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(220, 220, 220, 1)
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =4
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                    HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.NextArrow
                     OnSelect: =
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedColor: =ColorFade(RGBA(255, 200, 61, 1), 30%)
+                    PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     X: =500
                     Y: =1063
