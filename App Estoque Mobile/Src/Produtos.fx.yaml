@@ -2518,7 +2518,7 @@
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(54, 176, 75, 0.58)
             OnSelect: |-
-                =SubmitForm(frmViewDetailProdutos);UpdateContext({varUpdateCadProd: false}); Notify("Cadastro Atualizado com Sucesso!",NotificationType.Success) ;UpdateContext({varEditingProd: true})
+                =SubmitForm(frmViewDetailProdutos);UpdateContext({varUpdateCadProd: false}); Notify("Cadastro Atualizado com Sucesso!",NotificationType.Success) ;UpdateContext({varEditingProd: false})
             PressedBorderColor: =
             PressedColor: =RGBA(54, 176, 75, 1)
             PressedFill: =RGBA(51, 51, 51, 1)
@@ -2549,7 +2549,7 @@
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(184, 0, 0, 0.56)
             OnSelect: |-
-                =UpdateContext({varEditProd: false});ViewForm(frmViewDetailProdutos);UpdateContext({varUpdateCadProd:false})
+                =UpdateContext({varEditProd: false});ViewForm(frmViewDetailProdutos);UpdateContext({varUpdateCadProd:false});UpdateContext({varEditingProd:false})
             PressedBorderColor: =
             PressedColor: =RGBA(184, 0, 0, 1)
             PressedFill: =RGBA(51, 51, 51, 1)
