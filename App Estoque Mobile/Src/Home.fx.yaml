@@ -1319,7 +1319,7 @@
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =12
+        ZIndex: =13
 
         FundoDetailItem_3 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -1341,8 +1341,7 @@
                 ="<div style='
                 width: 600px;
                 height: 1090px;
-                background-color: #9dafff;
-                background-image: linear-gradient(62deg, #9dafff 0%, #6376fa 89%);
+                background-color: #F9F9F9;
                 
                 
                 box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
@@ -1400,15 +1399,17 @@
             ZIndex: =10
 
         frmViewDetailProdutos_1 As form:
-            BorderColor: =RGBA(166, 166, 166, 1)
+            AcceptsFocus: =true
+            BorderThickness: =2
             DataSource: =dtbProduto
             DefaultMode: =FormMode.View
-            Height: =670
+            Fill: =RGBA(217, 217, 217, 0.38)
+            Height: =558
             Item: ='glr-PesquisaProd-flash'.Selected
             Visible: =varViewDetailProduto1
-            Width: =586
-            X: =32
-            Y: =318
+            Width: =574
+            X: =36
+            Y: =430
             ZIndex: =11
 
             Categoria_DataCard6_1 As typedDataCard.textualEditCard:
@@ -1423,7 +1424,7 @@
                 MaxLength: =DataSourceInfo([@dtbProduto], DataSourceInfo.MaxLength, "Categoria")
                 Required: =false
                 Update: =DataCardValue53_1.Text
-                Width: =586
+                Width: =572
                 X: =0
                 Y: =3
                 ZIndex: =1
@@ -1470,10 +1471,10 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =21
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1539,7 +1540,7 @@
                 MaxLength: =DataSourceInfo([@dtbProduto], DataSourceInfo.MaxLength, "EAN")
                 Required: =false
                 Update: =DataCardValue54_1.Text
-                Width: =586
+                Width: =572
                 X: =0
                 Y: =4
                 ZIndex: =1
@@ -1586,10 +1587,10 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =21
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1654,7 +1655,7 @@
                 Height: =50
                 Required: =true
                 Update: =Value(DataCardValue35_2.Text)
-                Width: =586
+                Width: =572
                 X: =0
                 Y: =0
                 ZIndex: =13
@@ -1664,7 +1665,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
+                    Color: =RGBA(99, 118, 250, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1701,13 +1702,13 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =21
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =514
                     X: =30
                     Y: =DataCardKey45_2.Y + DataCardKey45_2.Height + 5
                     ZIndex: =2
@@ -1770,7 +1771,7 @@
                 MaxLength: =DataSourceInfo([@dtbProduto], DataSourceInfo.MaxLength, "Descricao")
                 Required: =false
                 Update: =DataCardValue38_2.Text
-                Width: =586
+                Width: =572
                 X: =0
                 Y: =1
                 ZIndex: =13
@@ -1780,7 +1781,7 @@
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
+                    Color: =RGBA(99, 118, 250, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
@@ -1789,7 +1790,7 @@
                     Height: =48
                     PaddingLeft: =0
                     Size: =21
-                    Text: =Parent.DisplayName
+                    Text: ="Produto"
                     Width: =Parent.Width - 60
                     Wrap: =false
                     X: =30
@@ -1817,10 +1818,10 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =21
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -1886,7 +1887,7 @@
                 MaxLength: =DataSourceInfo([@dtbProduto], DataSourceInfo.MaxLength, "UNM")
                 Required: =false
                 Update: =DataCardValue49_1.Text
-                Width: =586
+                Width: =572
                 X: =0
                 Y: =2
                 ZIndex: =13
@@ -1933,13 +1934,13 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =21
                     Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
+                    Width: =514
                     X: =30
                     Y: =DataCardKey54_2.Y + DataCardKey54_2.Height + 5
                     ZIndex: =2
@@ -2002,7 +2003,7 @@
                 MaxLength: =DataSourceInfo([@dtbProduto], DataSourceInfo.MaxLength, "Custo")
                 Required: =false
                 Update: =DataCardValue50_2.Text
-                Width: =586
+                Width: =572
                 X: =0
                 Y: =5
                 ZIndex: =13
@@ -2049,10 +2050,10 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =21
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -2118,7 +2119,7 @@
                 MaxLength: =DataSourceInfo([@dtbProduto], DataSourceInfo.MaxLength, "CustoTotal")
                 Required: =false
                 Update: =DataCardValue52_2.Text
-                Width: =586
+                Width: =572
                 X: =0
                 Y: =6
                 ZIndex: =13
@@ -2165,10 +2166,10 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =21
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -2233,7 +2234,7 @@
                 Height: =50
                 Required: =false
                 Update: =Value(DataCardValue47_2.Text)
-                Width: =586
+                Width: =572
                 X: =0
                 Y: =7
                 ZIndex: =13
@@ -2280,10 +2281,10 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =21
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -2349,7 +2350,7 @@
                 MaxLength: =DataSourceInfo([@dtbProduto], DataSourceInfo.MaxLength, "Valor")
                 Required: =false
                 Update: =DataCardValue51_2.Text
-                Width: =586
+                Width: =572
                 X: =0
                 Y: =8
                 ZIndex: =13
@@ -2396,10 +2397,10 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
                     Size: =21
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
@@ -2452,4 +2453,35 @@
                     Wrap: =false
                     Y: =DataCardKey56_2.Y
                     ZIndex: =4
+
+        TextInput4 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            Default: ="Informações do produto ⚠️"
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(217, 217, 217, 1)
+            DisabledFill: =RGBA(99, 118, 250, 1)
+            DisplayMode: =DisplayMode.Disabled
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =50
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(0, 120, 212, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =17
+            Visible: =varViewDetailProduto1
+            Width: =574
+            X: =36
+            Y: =387
+            ZIndex: =12
 
