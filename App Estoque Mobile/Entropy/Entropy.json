@@ -21,6 +21,7 @@
     "Button2": 477,
     "Button2_1": 478,
     "Button3": 138,
+    "Button4": 480,
     "CabecalhoProduto_1": 310,
     "CabecalhoProduto_2": 150,
     "CabecalhoProduto_3": 172,
@@ -465,7 +466,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/20/2023 02:51:53",
+  "HeaderLastSavedDateTimeUTC": "10/20/2023 02:57:11",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "d4242a16-0a34-475f-a165-dd77de37bd2c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/2ee5167599bb4f96ac8a4f126c3732e7\""
@@ -870,6 +871,7 @@
     "Button2": {},
     "Button2_1": {},
     "Button3": {},
+    "Button4": {},
     "CabecalhoProduto_1": {},
     "CabecalhoProduto_2": {},
     "CabecalhoProduto_3": {},
@@ -1847,6 +1849,7 @@
     "Button2": 227,
     "Button2_1": 226,
     "Button3": 339,
+    "Button4": 0,
     "CabecalhoProduto_1": 232,
     "CabecalhoProduto_2": 300,
     "CabecalhoProduto_3": 353,
