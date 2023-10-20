@@ -2824,66 +2824,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Home.frmViewDetailProdutos_1.Custo_DataCard2_2.DataCardValue50_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Home.frmViewDetailProdutos_1.Custo_DataCard2_2.DataCardValue50_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Home",
-                "type": "Home.frmViewDetailProdutos_1.Custo_DataCard2_2.DataCardValue50_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Home.frmViewDetailProdutos_1.CustoTotal_DataCard2_2.DataCardValue52_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Home.frmViewDetailProdutos_1.CustoTotal_DataCard2_2.DataCardValue52_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Home",
-                "type": "Home.frmViewDetailProdutos_1.CustoTotal_DataCard2_2.DataCardValue52_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Home.frmViewDetailProdutos_1.Estoque_DataCard1_1.DataCardValue47_2.AccessibleLabel"
                 }
               ],
