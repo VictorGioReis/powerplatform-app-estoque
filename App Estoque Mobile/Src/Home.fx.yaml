@@ -715,28 +715,6 @@
                 Y: =794
                 ZIndex: =33
 
-            Icon4 As icon.CancelBadge:
-                BorderColor: =RGBA(166, 166, 166, 1)
-                Color: =RGBA(230, 32, 32, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(220, 220, 220, 1)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
-                Height: =40
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                Icon: =Icon.CancelBadge
-                OnSelect: =Reset('txt-PesquisaEAN_2');Reset('txt-PesquisaProduto_1');Reset('cbx-PesquisaCategoria_1')
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                PressedFill: =RGBA(0, 0, 0, 0)
-                Tooltip: ="Limpar Filtros"
-                Width: =40
-                X: =559
-                Y: =587
-                ZIndex: =34
-
             PesquisaEAN_2 As group:
                 Height: =5
                 Width: =5
@@ -745,7 +723,6 @@
                 ZIndex: =34
 
                 "'txt-PesquisaEAN_2' As text":
-                    Align: =Align.Center
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderThickness: =2
                     Clear: =true
@@ -761,7 +738,7 @@
                     HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverColor: =RGBA(51, 51, 51, 1)
                     HoverFill: =RGBA(255, 255, 255, 1)
-                    OnSelect: =Reset('txt-PesquisaEAN_2');Reset('txt-PesquisaProduto_1');
+                    OnSelect: =
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
@@ -812,7 +789,7 @@
                     PressedBorderColor: =RGBA(255, 255, 0, 1)
                     PressedContentColor: =RGBA(0, 0, 0, 0)
                     PressedFillColor: =RGBA(0, 0, 0, 0.16)
-                    ScanningMode: ='BarcodeReader.ScanningMode'.AutomaticallyScan
+                    ScanningMode: ='BarcodeReader.ScanningMode'.SelectToScan
                     Text: =""
                     TextColor: =RGBA(255, 255, 255, 1)
                     Width: =88
@@ -828,7 +805,6 @@
                 ZIndex: =35
 
                 "'txt-PesquisaProduto_1' As text":
-                    Align: =Align.Center
                     BorderColor: =RGBA(166, 166, 166, 1)
                     BorderThickness: =2
                     Clear: =true
@@ -1306,7 +1282,7 @@
         DisplayMode: =DisplayMode.Disabled
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =91
+        Height: =65
         HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
@@ -1332,7 +1308,7 @@
         FocusedBorderThickness: =4
         Font: =Font.'Patrick Hand'
         FontWeight: =FontWeight.Bold
-        Height: =82
+        Height: =65
         Size: =45
         Text: ="Home"
         Width: =640
@@ -1495,8 +1471,8 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =15
-                    RadiusBottomRight: =15
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
                     RadiusTopLeft: =15
                     RadiusTopRight: =15
                     Size: =21
@@ -1611,8 +1587,8 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =15
-                    RadiusBottomRight: =15
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
                     RadiusTopLeft: =15
                     RadiusTopRight: =15
                     Size: =21
@@ -1958,8 +1934,8 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =15
-                    RadiusBottomRight: =15
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
                     RadiusTopLeft: =15
                     RadiusTopRight: =15
                     Size: =21
@@ -2074,8 +2050,8 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =15
-                    RadiusBottomRight: =15
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
                     RadiusTopLeft: =15
                     RadiusTopRight: =15
                     Size: =21
@@ -2189,8 +2165,8 @@
                     PressedBorderColor: =RGBA(0, 120, 212, 1)
                     PressedColor: =RGBA(51, 51, 51, 1)
                     PressedFill: =RGBA(255, 255, 255, 1)
-                    RadiusBottomLeft: =15
-                    RadiusBottomRight: =15
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
                     RadiusTopLeft: =15
                     RadiusTopRight: =15
                     Size: =21
