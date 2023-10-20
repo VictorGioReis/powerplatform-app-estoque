@@ -75,8 +75,8 @@ CadastroProduto As screen:
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =337
@@ -812,8 +812,8 @@ CadastroProduto As screen:
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -928,8 +928,8 @@ CadastroProduto As screen:
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1044,8 +1044,8 @@ CadastroProduto As screen:
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -1162,8 +1162,8 @@ CadastroProduto As screen:
                 PressedFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
