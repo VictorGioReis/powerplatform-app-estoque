@@ -3963,36 +3963,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Produtos.varEditProd"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Produtos.varEditProd",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "varEditProd",
-                "module": "Produtos",
-                "type": "Produtos"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Home.varBloqueiaSaldo"
                 }
               ],

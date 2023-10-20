@@ -357,6 +357,7 @@
     "PesquisaEAN_2": 363,
     "PesquisaNomeProduto": 204,
     "PesquisaNomeProduto_1": 364,
+    "popup_edit_prod": 479,
     "Produtos": 173,
     "Rectangle1": 5,
     "Rectangle10": 360,
@@ -464,7 +465,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/20/2023 02:42:20",
+  "HeaderLastSavedDateTimeUTC": "10/20/2023 02:43:20",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "d4242a16-0a34-475f-a165-dd77de37bd2c": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/2ee5167599bb4f96ac8a4f126c3732e7\""
@@ -718,6 +719,15 @@
     "PesquisaNomeProduto_1": {
       "icon-produto_1": 1,
       "txt-PesquisaProduto_1": 0
+    },
+    "popup_edit_prod": {
+      "Button1": 4,
+      "Button2": 1,
+      "Button2_1": 0,
+      "HtmlText2": 5,
+      "Image8": 2,
+      "Label4": 3,
+      "Rectangle3": 6
     },
     "ResumoSaldos": {
       "bloqSaldo": 2,
@@ -1326,6 +1336,7 @@
     "PesquisaEAN_2": {},
     "PesquisaNomeProduto": {},
     "PesquisaNomeProduto_1": {},
+    "popup_edit_prod": {},
     "Produtos": {},
     "Rectangle1": {},
     "Rectangle10": {},
@@ -2172,6 +2183,7 @@
     "PesquisaEAN_2": 34,
     "PesquisaNomeProduto": 148,
     "PesquisaNomeProduto_1": 39,
+    "popup_edit_prod": 0,
     "Produtos": 0,
     "Rectangle1": 444,
     "Rectangle10": 53,
