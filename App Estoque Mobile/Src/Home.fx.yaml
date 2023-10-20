@@ -680,16 +680,15 @@
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =48
-                X: =63
-                Y: =794
+                X: =68
+                Y: =798
                 ZIndex: =32
 
             "'cbx-PesquisaCategoria_1' As combobox":
                 BorderColor: =RGBA(166, 166, 166, 1)
-                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronBackground: =RGBA(99, 118, 250, 1)
                 ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
                 ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-                ChevronFill: =RGBA(33, 33, 33, 1)
                 ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                 Color: =RGBA(51, 51, 51, 1)
@@ -715,6 +714,27 @@
                 X: =142
                 Y: =794
                 ZIndex: =33
+
+            Icon4 As icon.CancelBadge:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =RGBA(230, 32, 32, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =40
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.CancelBadge
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Tooltip: ="Limpar Filtros"
+                Width: =40
+                X: =559
+                Y: =587
+                ZIndex: =34
 
             PesquisaEAN_2 As group:
                 Height: =5
@@ -761,27 +781,28 @@
                     DisabledFill: =RGBA(0, 0, 0, 0)
                     DisplayMode: =DisplayMode.View
                     FocusedBorderThickness: =4
-                    Height: =48
+                    Height: =53
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Image: ='codigo-qr-unscreen'
                     OnSelect: =
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
-                    Width: =48
+                    Width: =82
                     X: =55
-                    Y: =637
+                    Y: =632
                     ZIndex: =28
 
                 "BarcodeReader1_2 As 'Leitor de Código de Barras'":
                     BorderFillColor: =RGBA(99, 118, 250, 1)
-                    BorderStyle: =BorderStyle.Dashed
+                    BorderRadius: =0
+                    BorderStyle: =BorderStyle.Solid
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledContentColor: =RGBA(166, 166, 166, 1)
                     DisabledFillColor: =RGBA(244, 244, 244, 1)
                     DisplayMode: =DisplayMode.Edit
-                    FillColor: =RGBA(0, 0, 0, 0)
-                    Height: =52
+                    FillColor: =RGBA(255, 255, 255, 0.12)
+                    Height: =56
                     HoverBorderColor: =RGBA(221, 79, 14, 1)
                     HoverContentColor: =RGBA(255, 255, 255, 1)
                     HoverFillColor: =RGBA(237, 237, 237, 0.09)
@@ -789,11 +810,12 @@
                     PressedBorderColor: =RGBA(255, 255, 0, 1)
                     PressedContentColor: =RGBA(0, 0, 0, 0)
                     PressedFillColor: =RGBA(0, 0, 0, 0.16)
+                    ScanningMode: ='BarcodeReader.ScanningMode'.AutomaticallyScan
                     Text: =""
                     TextColor: =RGBA(255, 255, 255, 1)
-                    Width: =85
-                    X: =40
-                    Y: =637
+                    Width: =88
+                    X: =55
+                    Y: =633
                     ZIndex: =29
 
             PesquisaNomeProduto_1 As group:
@@ -815,7 +837,7 @@
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
-                    Height: =56
+                    Height: =61
                     HintText: ="Buscar por nome"
                     HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverColor: =RGBA(51, 51, 51, 1)
@@ -830,7 +852,7 @@
                     Size: =21
                     Width: =422
                     X: =137
-                    Y: =711
+                    Y: =704
                     ZIndex: =30
 
                 "'icon-produto_1' As image":
@@ -849,8 +871,8 @@
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Width: =48
-                    X: =63
-                    Y: =717
+                    X: =72
+                    Y: =707
                     ZIndex: =31
 
         DataCard2 As dataCard.blankCard:
