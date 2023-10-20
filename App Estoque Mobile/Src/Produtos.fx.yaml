@@ -2376,6 +2376,8 @@
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 0, 0, 0.65)
+        OnSelect: |-
+            =ViewForm(frmViewDetailProdutos);UpdateContext({varEditingProd: false})
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(184, 0, 0, 1)
         PressedFill: =RGBA(51, 51, 51, 1)
