@@ -1238,6 +1238,35 @@ CadastroProduto As screen:
         Y: =88
         ZIndex: =5
 
+    "'btn-newProduto_2' As button":
+        BorderColor: =RGBA(99, 118, 250, 1)
+        BorderThickness: =1
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(54, 176, 75, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverBorderColor: =RGBA(255, 255, 0, 1)
+        HoverColor: =RGBA(54, 176, 75, 0.64)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        OnSelect: =SubmitForm('frm-cadProduto');Notify("       Novo Produto Registrado com Sucesso!",NotificationType.Success);ResetForm('frm-cadProduto');ViewForm('frm-cadProduto');Navigate(Produtos,ScreenTransition.UnCover)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(54, 176, 75, 1)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        Size: =24
+        Text: ="Salvar"
+        Width: =163
+        X: =112
+        Y: =1058
+        ZIndex: =6
+
     Icon2_3 As icon.Camera:
         BorderColor: =RGBA(166, 166, 166, 1)
         Color: =RGBA(184, 0, 0, 1)
@@ -1258,63 +1287,6 @@ CadastroProduto As screen:
         X: =427
         Y: =1058
         ZIndex: =8
-
-    "'btn-Salvar-produto' As group":
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =8
-
-        "'btn-newProduto_2' As button":
-            Align: =Align.Right
-            BorderColor: =RGBA(255, 191, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 191, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(218, 228, 235, 0.25)
-            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =70
-            HoverBorderColor: =RGBA(255, 255, 0, 1)
-            HoverColor: =RGBA(54, 176, 75, 0.64)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: =SubmitForm('frm-cadProduto');Notify("       Novo Produto Registrado com Sucesso!",NotificationType.Success);ResetForm('frm-cadProduto');ViewForm('frm-cadProduto');Navigate(Produtos,ScreenTransition.UnCover)
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-            PressedColor: =RGBA(54, 176, 75, 1)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            RadiusBottomLeft: =15
-            RadiusBottomRight: =15
-            RadiusTopLeft: =15
-            RadiusTopRight: =15
-            Size: =24
-            Text: ="Salvar"
-            Width: =163
-            X: =112
-            Y: =1058
-            ZIndex: =6
-
-        "'icon-cadprod_2' As image":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =45
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: ='disquete (1)'
-            OnSelect: =SubmitForm('frm-cadProduto');Notify("       Novo Produto Registrado com Sucesso!",NotificationType.Success);ResetForm('frm-cadProduto');ViewForm('frm-cadProduto');Navigate(Produtos,ScreenTransition.UnCover)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =45
-            X: =120
-            Y: =1070
-            ZIndex: =7
 
     TextInput3_4 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -1358,4 +1330,33 @@ CadastroProduto As screen:
         Text: ="Cadastro de Produto"
         Width: =640
         ZIndex: =10
+
+    "'btn-newProduto_3' As button":
+        BorderColor: =RGBA(99, 118, 250, 1)
+        BorderThickness: =1
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(184, 0, 0, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        HoverBorderColor: =RGBA(255, 255, 0, 1)
+        HoverColor: =RGBA(54, 176, 75, 0.64)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        OnSelect: =ResetForm('frm-cadProduto');ViewForm('frm-cadProduto');Navigate(Produtos,ScreenTransition.UnCover)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(54, 176, 75, 1)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Size: =24
+        Text: ="X"
+        Width: =70
+        X: =524
+        Y: =1058
+        ZIndex: =11
 
