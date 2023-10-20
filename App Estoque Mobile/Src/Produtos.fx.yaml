@@ -2255,6 +2255,8 @@
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(54, 176, 75, 0.58)
+            OnSelect: |-
+                =EditForm(frmViewDetailProdutos);UpdateContext({varEditProd: false})
             PressedBorderColor: =
             PressedColor: =RGBA(54, 176, 75, 1)
             PressedFill: =RGBA(51, 51, 51, 1)
@@ -2287,7 +2289,7 @@
             OnSelect: |-
                 =UpdateContext({varEditProd: false});ViewForm(frmViewDetailProdutos)
             PressedBorderColor: =
-            PressedColor: =RGBA(54, 176, 75, 1)
+            PressedColor: =RGBA(184, 0, 0, 1)
             PressedFill: =RGBA(51, 51, 51, 1)
             RadiusBottomLeft: =15
             RadiusBottomRight: =15
