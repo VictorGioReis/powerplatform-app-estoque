@@ -2395,7 +2395,7 @@
         Y: =1076
         ZIndex: =23
 
-    popup_edit_prod_1 As group:
+    popup_save_edit_prod_1 As group:
         Height: =5
         Width: =5
         X: =40
@@ -2406,7 +2406,8 @@
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(99, 118, 250, 0.83)
+            DisplayMode: =DisplayMode.Disabled
             Fill: =RGBA(99, 118, 250, 0.89)
             FocusedBorderThickness: =4
             Height: =1134
@@ -2423,7 +2424,7 @@
                 ="<center>
                 <div style='
                 width: 550px;
-                height: 400px;
+                height: 300px;
                 background-color: #F9F9F9;
                 
                 box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
@@ -2447,11 +2448,11 @@
             Font: =Font.'Segoe UI'
             Height: =143
             Size: =21
-            Text: ="Você está preste a editar dados no sistema, você tem certeza que deseja fazer alterações?"
+            Text: ="Você confirma as alterações realizadas?"
             Visible: =varUpdateCadProd
             Width: =529
             X: =55
-            Y: =426
+            Y: =399
             ZIndex: =26
 
         Button1_1 As button:
@@ -2517,7 +2518,7 @@
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(54, 176, 75, 0.58)
             OnSelect: |-
-                =EditForm(frmViewDetailProdutos);UpdateContext({varEditProd: false}); UpdateContext({varEditingProd: true})
+                =SubmitForm(frmViewDetailProdutos);UpdateContext({varUpdateCadProd: false}); Notify("Cadastro Atualizado com Sucesso!",NotificationType.Success) ;UpdateContext({varEditingProd: true})
             PressedBorderColor: =
             PressedColor: =RGBA(54, 176, 75, 1)
             PressedFill: =RGBA(51, 51, 51, 1)
@@ -2530,7 +2531,7 @@
             Visible: =varUpdateCadProd
             Width: =229
             X: =343
-            Y: =603
+            Y: =531
             ZIndex: =29
 
         Button2_2 As button:
@@ -2561,6 +2562,6 @@
             Visible: =varUpdateCadProd
             Width: =229
             X: =66
-            Y: =603
+            Y: =531
             ZIndex: =30
 
