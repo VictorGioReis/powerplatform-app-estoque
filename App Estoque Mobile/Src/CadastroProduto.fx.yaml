@@ -1263,30 +1263,9 @@ CadastroProduto As screen:
         Size: =24
         Text: ="Salvar"
         Width: =163
-        X: =112
+        X: =142
         Y: =1058
         ZIndex: =6
-
-    Icon2_3 As icon.Camera:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(184, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        Height: =60
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 191, 0, 1)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.Cancel
-        OnSelect: =ResetForm('frm-cadProduto');ViewForm('frm-cadProduto');Navigate(Produtos,ScreenTransition.UnCover)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        Width: =60
-        X: =427
-        Y: =1058
-        ZIndex: =8
 
     TextInput3_4 As text:
         BorderColor: =RGBA(166, 166, 166, 1)
@@ -1342,13 +1321,13 @@ CadastroProduto As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =70
-        HoverBorderColor: =RGBA(255, 255, 0, 1)
-        HoverColor: =RGBA(54, 176, 75, 0.64)
-        HoverFill: =RGBA(0, 0, 0, 0)
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(184, 0, 0, 0.68)
         OnSelect: =ResetForm('frm-cadProduto');ViewForm('frm-cadProduto');Navigate(Produtos,ScreenTransition.UnCover)
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(54, 176, 75, 1)
-        PressedFill: =RGBA(0, 0, 0, 0)
+        PressedBorderColor: =RGBA(184, 0, 0, 1)
+        PressedColor: =RGBA(184, 0, 0, 1)
+        PressedFill: =RGBA(51, 51, 51, 1)
         RadiusBottomLeft: =100
         RadiusBottomRight: =100
         RadiusTopLeft: =100
@@ -1356,7 +1335,7 @@ CadastroProduto As screen:
         Size: =24
         Text: ="X"
         Width: =70
-        X: =524
+        X: =464
         Y: =1058
         ZIndex: =11
 
