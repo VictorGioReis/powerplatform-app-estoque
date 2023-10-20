@@ -2347,6 +2347,8 @@
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+        OnSelect: |-
+            =UpdateContext({varUpdateCadProd: true})
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -2392,4 +2394,173 @@
         X: =534
         Y: =1076
         ZIndex: =23
+
+    popup_edit_prod_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =2
+        ZIndex: =31
+
+        Rectangle3_1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(99, 118, 250, 0.89)
+            FocusedBorderThickness: =4
+            Height: =1134
+            HoverFill: =RGBA(0, 120, 212, 1)
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Visible: =varUpdateCadProd
+            Width: =640
+            Y: =2
+            ZIndex: =24
+
+        HtmlText2_4 As htmlViewer:
+            Height: =459
+            HtmlText: |-
+                ="<center>
+                <div style='
+                width: 550px;
+                height: 400px;
+                background-color: #F9F9F9;
+                
+                box-shadow: rgba(100, 100, 100, 0.45) 1px 1px 1px 1px;
+                border-radius: 40px;
+                '>
+                </div>"
+            Visible: =varUpdateCadProd
+            Width: =640
+            Y: =353
+            ZIndex: =25
+
+        Label4_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =143
+            Size: =21
+            Text: ="Você está preste a editar dados no sistema, você tem certeza que deseja fazer alterações?"
+            Visible: =varUpdateCadProd
+            Width: =529
+            X: =55
+            Y: =426
+            ZIndex: =26
+
+        Button1_1 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(255, 0, 0, 1)
+            DisabledFill: =RGBA(51, 51, 51, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(0, 120, 212, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =70
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =24
+            Text: ="Atenção!"
+            Visible: =varUpdateCadProd
+            Width: =551
+            X: =44
+            Y: =329
+            ZIndex: =27
+
+        Image8_1 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =70
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: ='alerta-unscreen'
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Visible: =varUpdateCadProd
+            Width: =149
+            X: =355
+            Y: =329
+            ZIndex: =28
+
+        Button2_3 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderThickness: =1
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(54, 176, 75, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =70
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(54, 176, 75, 0.58)
+            OnSelect: |-
+                =EditForm(frmViewDetailProdutos);UpdateContext({varEditProd: false}); UpdateContext({varEditingProd: true})
+            PressedBorderColor: =
+            PressedColor: =RGBA(54, 176, 75, 1)
+            PressedFill: =RGBA(51, 51, 51, 1)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =17
+            Text: ="Sim, farei a edição"
+            Visible: =varUpdateCadProd
+            Width: =229
+            X: =343
+            Y: =603
+            ZIndex: =29
+
+        Button2_2 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderThickness: =1
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(184, 0, 0, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =70
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(184, 0, 0, 0.56)
+            OnSelect: |-
+                =UpdateContext({varEditProd: false});ViewForm(frmViewDetailProdutos)
+            PressedBorderColor: =
+            PressedColor: =RGBA(184, 0, 0, 1)
+            PressedFill: =RGBA(51, 51, 51, 1)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =17
+            Text: ="Não"
+            Visible: =varUpdateCadProd
+            Width: =229
+            X: =66
+            Y: =603
+            ZIndex: =30
 
